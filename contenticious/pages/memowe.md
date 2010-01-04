@@ -13,8 +13,10 @@ Read more (german):
 * [mirko.westermeier.de][mwde] - my personal homepage
 * [memowe.de][mde] - my webdesign shit
 * [eingedenk] - my weird blog
+* [memowe on twitter][twitter]
 
 [MS]: http://www.muenster.de/
 [mwde]: http://mirko.westermeier.de/
 [mde]: http://www.memowe.de/
 [eingedenk]: http://www.eingedenk.de/
+[twitter]: http://twitter.com/memowe
