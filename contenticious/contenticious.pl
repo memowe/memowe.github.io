@@ -3,7 +3,6 @@
 BEGIN { use FindBin; use lib "$FindBin::Bin/mojo/lib" }
 
 use Mojolicious::Lite;
-use Mojo::Asset::File;
 use Mojo::Command;
 use Text::Markdown qw( markdown );
 use List::Util qw( first );
@@ -21,8 +20,7 @@ sub content_tree {
         if ( /([\w_-]+)\.md$/ and -f and -r ) {
             ( my $name = $1 ) =~ s/^(\d+_)?//; # drop sort prefix
 
-            my $file    = Mojo::Asset::File->new( path => $_ );
-            my $content = $file->slurp;
+            my $content = slurp_file($_);
             my %meta    = ();
             $meta{lc $1} = $2 while $content =~ s/\A(\w+):\s*(.*)[\n\r]+//;
 
@@ -42,20 +40,23 @@ sub content_tree {
         if ( /([\w_-]+)$/ and -d and -r and -x ) {
             ( my $name = $1 ) =~ s/^(\d+_)?//; # drop sort prefix
 
-            my %meta    = ();
+            my $content = content_tree($_);
+
+            my $meta    = {};
             my $metafn  = "$_/meta";
             if ( -f $metafn and -r $metafn ) {
-                my $mfc = Mojo::Asset::File->new( path => $metafn )->slurp;
-                $meta{lc $1} = $2 while $mfc =~ s/\A(\w+):\s*(.*)[\n\r]+//;
+                my $mfc = slurp_file($metafn);
+                $meta->{lc $1} = $2 while $mfc =~ s/\A(\w+):\s*(.*)[\n\r]+//;
+            } else {
+                my $index = first { $_->{name} eq 'index' } @$content;
+                $meta = $index->{meta} if $index;
             }
-
-            my $content = content_tree($_);
 
             push @tree, {
                 name        => $name,
                 filename    => $_,
                 type        => 'dir',
-                meta        => \%meta,
+                meta        => $meta,
                 content     => @$content ? $content : undef,
             };
 
@@ -75,8 +76,10 @@ sub active_content {
     my $content_tree    = content_tree;
     my $content         = $content_tree;
     my $entry;
+    my $prev_entry;
 
     foreach my $name ( @names ) {
+        $prev_entry = $entry;
         $entry = first { $_->{name} eq $name } @$content;
         return unless $entry;
 
@@ -85,8 +88,14 @@ sub active_content {
         if ( $entry->{type} eq 'dir' ) {
             $content = $entry->{content};
         }
-        else { last }
     }
+
+    $entry->{current} = 1;
+
+    $prev_entry->{current} = 1
+        if  $prev_entry
+        and $entry->{name} eq 'index'
+        and $entry->{type} eq 'file';
 
     return $entry, $content_tree if wantarray;
     return $entry;
@@ -107,6 +116,22 @@ sub walk_content_tree {
         walk_content_tree( $sub, $data->{content}, "$prefix/$data->{name}" )
             if $data->{type} eq 'dir' and defined $data->{content};
     }
+}
+
+# read and return the whole file content at once
+sub slurp_file {
+    my ( $path ) = @_;
+
+    my $content;
+    my $content_fh;
+    unless (open $content_fh, '<:utf8', $path) {
+        app->log->error("Can't open $path: $!");
+        return;
+    }
+    sysread $content_fh, $content, -s $content_fh;
+    close $content_fh;
+
+    return $content
 }
 
 # k, now gimmeh dem stash and dem utf-8 pls
@@ -276,11 +301,15 @@ __DATA__
 %   last unless @$list;
 <ul class="navi navilevel<%= $level %>">
 %   for ( @$list ) {
+%       next if $_->{name} eq 'index' and $_->{type} eq 'file' and $level;
+%       next if $_->{meta}{navihide};
 %       my $class   = $_->{active} ? ' class="active"' : '';
 %       my $ext     = $_->{type} eq 'file' ? '.html' : '/';
 %       my $name    = $_->{meta}{navi} ? $_->{meta}{navi} : $_->{name};
     <li<%== $class %>>
-        <a href="<%== "$pre/$_->{name}$ext" %>"><%= $name %></a>
+        <%== qq[<a href="$pre/$_->{name}$ext">] unless $_->{current} %>
+        <%= $name =%>
+        <%== '</a>' unless $_->{current} %>
     </li>
 %       if ( $_->{active} and $_->{type} eq 'dir' ) {
 %           $tree = $_->{content};
