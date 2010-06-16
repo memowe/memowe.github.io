@@ -7,9 +7,13 @@ memowe on github
 
 Hi! I write [Perl][] and stuff. Here are my github projects, but you can also read something [about me](memowe.html).
 
+* **[Mojolicious::Plugin::ContentManagement]** - a simple but flexible and extendable content management system for Mojolicious
+
+    I always wanted some kind of CMS that allows me to manage content in a simple way but also gets out of my way when it comes to extensions of my webapp. So here it is, ships with Markdown and a filesystem and dbi source.
+
 * **[contenticious][]** - A simple file based "CMS" on Mojo steroids!
 
-    Contenticious is a very simple way to glue together some content to a small website. You just write Markdown files and check the generated HTML in your browser. To publish, use the dump command to generate static HTML. This is how this page is generated.
+    Contenticious is a very simple way to glue together some content to a small website. You just write Markdown files and check the generated HTML in your browser. To publish, use the dump command to generate static HTML. This is how this page is generated, but when your focus is on the management part, take a look at my ContentManagement plugin for Mojolicious above.
 
 * **[urlicious][]** - A simple URL shortener on Mojo steroids!
 
