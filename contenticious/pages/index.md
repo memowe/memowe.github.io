@@ -7,7 +7,7 @@ memowe on github
 
 Hi! I write [Perl][] and stuff. Here are my github projects, but you can also read something [about me](memowe.html).
 
-* **[Mojolicious::Plugin::ContentManagement]** - a simple but flexible and extendable content management system for Mojolicious
+* **[Mojolicious::Plugin::ContentManagement][MPCM]** - a simple but flexible and extendable content management system for Mojolicious
 
     I always wanted some kind of CMS that allows me to manage content in a simple way but also gets out of my way when it comes to extensions of my webapp. So here it is, ships with Markdown and a filesystem and dbi source.
 
@@ -38,6 +38,7 @@ Hi! I write [Perl][] and stuff. Here are my github projects, but you can also re
 See also my [github page][gh].
 
 [Perl]: http://www.perl.org
+[MPCM]: http://github.com/memowe/mojolicious-plugin-content_management
 [contenticious]: http://github.com/memowe/contenticious#readme
 [urlicious]: http://github.com/memowe/urlicious#readme
 [Mojolicious]: http://github.com/kraih/mojo
