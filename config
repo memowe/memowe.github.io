@@ -1,0 +1,8 @@
+var config = {
+
+    name        : 'Mirko Westermeier',
+    slogan      : 'Computer scientist, dance instructor, pirate and 3D RC helicopter pilot with a passion for teaching.',
+
+    contentFile : 'content.md',
+
+}
