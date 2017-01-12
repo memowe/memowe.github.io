@@ -1,0 +1,8 @@
+#!/usr/bin/env perl
+
+use Mojolicious::Lite;
+use FindBin;
+
+app->static->paths([$FindBin::Bin]);
+
+app->start('daemon');
