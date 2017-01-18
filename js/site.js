@@ -9,9 +9,35 @@ $(function() {
         $('<div id="content">')
     );
 
+    // add fancy parallax effect
+    addFancyParallaxMirko();
+
     // load content
     loadContent();
 });
+
+// adds a fancy rolling eye Mirko to the given container
+function addFancyParallaxMirko() {
+
+    // prepare layers
+    var eyes = $('<img src="/images/mirko/eyes.png">')
+        .addClass('parallax-layer')
+        .css({width: 1209, height: 1613});
+    var face = $('<img src="/images/mirko/face.png">')
+        .addClass('parallax-layer')
+        .css({width: 1233, height: 1623});
+
+    // arrange
+    var viewport = $('<div class="parallax-viewport">')
+        .css({width: 1233, height: 1623})
+        .append(eyes, face)
+
+    // magic!
+    viewport.children().parallax();
+
+    // connect
+    $('#header').append(viewport);
+}
 
 // loads content into the given container
 function loadContent(container) {
