@@ -66,6 +66,13 @@ function loadContent(container) {
 // render markdown documents as sections
 function renderSections(render, documents) {
     documents.forEach(function(content) {
-        $('#content').append($('<div class="section">').html(render(content)));
+
+        // prepare
+        var section = $('<div class="section">').html(render(content));
+
+        // inject into dom
+        section.appendTo($('#content'));
     });
+
+    $('.section a img').parent().colorbox();
 }
