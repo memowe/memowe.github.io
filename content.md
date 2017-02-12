@@ -23,3 +23,27 @@ At the department I work on informatics tutor (teaching assistants) education an
 [ie]: https://informatics-europe.org
 [cece-map]: http://cece-map.informatics-europe.org
 
+-----
+
+# Dancer and Dance Instructor
+
+I started dancing in the late 90s and quickly moved on to competitive ballroom dancing in [Die Residenz Münster][resi]. Together with my partners I danced several regional and national championships with mixed results. ;-) We were also members of the federal state team and attended quite a few world ranking competitions.
+
+[![][bonn_tn]][bonn]
+[![][lma_tn]][lma]
+[![][goc_tn]][goc]
+[![][euro_tn]][euro]
+
+[bonn]: images/dance/bonn.jpg
+[bonn_tn]: images/dance/bonn_tn.jpg
+[lma]: images/dance/lma.jpg
+[lma_tn]: images/dance/lma_tn.jpg
+[goc]: images/dance/goc.jpg
+[goc_tn]: images/dance/goc_tn.jpg
+[euro]: images/dance/euro.jpg
+[euro_tn]: images/dance/euro_tn.jpg
+
+I quit ballroom dancing in late 2010 for personal reasons and immediately started dancing socially on salsa events in Münster. I also attended three [classes][hsp-salsa] at once, including three beginner classes in a row.
+
+[resi]: http://www.die-residenz-muenster.de/
+[hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
