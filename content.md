@@ -1,3 +1,5 @@
+<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+
 # Mirko Westermeier
 
 Computer science education researcher, dance instructor, pirate, RC helicopter pilot and human, located in Münster, Germany.
