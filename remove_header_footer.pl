@@ -34,16 +34,16 @@ while (defined(my $content_fn = glob "$Bin/*.md")) {
 
     my $new_content = $content;
 
-    # no header at the beginning: prepend
-    if (index($content, $header) != 0) {
-        $new_content = $header . $new_content;
-        print "header added to $content_fn\n";
+    # header at the beginning: remove
+    if (index($content, $header) == 0) {
+        $new_content = substr $new_content, length($header);
+        print "header removed from $content_fn\n";
     }
 
-    # no footer at the end: append
-    if (index($content, $footer) != length($content) - length($footer)) {
-        $new_content = $new_content . $footer;
-        print "footer added to $content_fn\n";
+    # footer at the end: remove
+    if (index($content, $footer) == length($content) - length($footer)) {
+        $new_content = substr $new_content, 0, (length($new_content) - length($footer));
+        print "footer removed from $content_fn\n";
     }
 
     # action
