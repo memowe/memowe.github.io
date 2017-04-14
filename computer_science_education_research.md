@@ -1,3 +1,5 @@
+<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+
 # Computer Science Education Research
 
 I work as a research assistant and PhD student at the Computer Science Department of [Westfälische Wilhelms-Universität Münster][wwu] in the [working group of Prof. Dr. Jan Vahrenhold][agv] (Efficient Algorithms and Algorithm Engineering).
@@ -12,3 +14,13 @@ At the department I work on informatics tutor (teaching assistants) training and
 [acm-e]: https://europe.acm.org
 [ie]: https://informatics-europe.org
 [cece-map]: http://cece-map.informatics-europe.org
+
+---
+
+**&copy; 2017 [Mirko Westermeier][mw]** -
+[mirko@westermeier.de][mail] -
+[@memowe][twitter]
+
+[mw]: http://mirko.westermeier.de
+[mail]: mailto:mirko@westermeier.de
+[twitter]: https://twitter.com/memowe

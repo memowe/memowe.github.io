@@ -1,3 +1,5 @@
+<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+
 # Dancer and Dance Instructor
 
 I used to be a competitive ballroom dancer, now I am a Salsa and Kizomba dancer and instructor. I travel all around Europe and the world to explore and exchange ideas and share a wonderful time on the dancefloor with many international salsa dancers and teachers.
@@ -50,3 +52,13 @@ As a ballroom dancer one has quite a different impression of salsa dancing than 
 
 [resi]: http://www.die-residenz-muenster.de/
 [hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
+
+---
+
+**&copy; 2017 [Mirko Westermeier][mw]** -
+[mirko@westermeier.de][mail] -
+[@memowe][twitter]
+
+[mw]: http://mirko.westermeier.de
+[mail]: mailto:mirko@westermeier.de
+[twitter]: https://twitter.com/memowe
