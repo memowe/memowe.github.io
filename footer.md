@@ -2,7 +2,8 @@
 
 **&copy; #YEAR# [Mirko Westermeier][mw]** -
 [mirko@westermeier.de][mail] -
-[@memowe][twitter]
+[@memowe][twitter]  
+Grevener Straße 12 - 48149 Münster - Germany
 
 [mw]: http://mirko.westermeier.de
 [mail]: mailto:mirko@westermeier.de
