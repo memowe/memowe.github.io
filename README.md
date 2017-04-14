@@ -8,7 +8,19 @@
 
 Located in Münster, Germany.
 
-[mail]: mailto:mirko@westermeier.de
+[![GitHub](images/icons/github.png "GitHub")][github]
+[![Facebook](images/icons/facebook.png "Facebook")][facebook]
+[![Twitter](images/icons/twitter.png "Twitter")][twitter]
+[![E-Mail](images/icons/email.png "e-mail")][email]
+
+Public OpenPGP key: [0x730E195D][pgp]
+Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
+
+[github]: https://github.com/memowe
+[facebook]: https://facebook.com/mirko.westermeier
+[twitter]: https://twitter.com/memowe
+[email]: mailto:mirko@westermeier.de
+[pgp]: 730E195D.asc
 
 ---
 
