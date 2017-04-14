@@ -2,9 +2,9 @@
 
 # Mirko Westermeier
 
-Computer science education researcher, dance instructor, pirate, RC helicopter pilot and human, located in Münster, Germany.
+**Computer science education researcher, dance instructor, pirate and 3D RC helicopter pilot with a passion for teaching.**
 
-Contact me via mail: [mirko@westermeier.de][mail]
+Located in Münster, Germany.
 
 [mail]: mailto:mirko@westermeier.de
 
