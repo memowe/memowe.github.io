@@ -20,6 +20,16 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 [email]: mailto:mirko@westermeier.de
 [pgp]: 730E195D.asc
 
+## What I do
+
+**I work as a research associate and PhD student in computer science education at the University of Münster.** I am a member of the Committee on European Computing Education (ACM-Europe/Informactis Europe) and work on our tutor training program as well as various lectures and seminars. [Read more][CSEdR].
+
+[CSEdR]: computer_science_education_research.md
+
+**I am a Salsa and Kizomba dancer and instructor.** I do a lot of professional development and travel to many international congresses to improve my dancing and teaching. I teach regular classes and do workshops on international congresses, gala events and regional socials. [Read more][Dancing].
+
+[Dancing]: dance_instructor.md
+
 ---
 
 **&copy; 2017 [Mirko Westermeier][mw]** -
