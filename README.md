@@ -13,7 +13,7 @@ Located in Münster, Germany.
 [![Twitter](images/icons/twitter.png "Twitter")][twitter]
 [![E-Mail](images/icons/email.png "e-mail")][email]
 
-Public OpenPGP key: [0x730E195D][pgp]
+Public OpenPGP key: [0x730E195D][pgp]  
 Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 
 [github]: https://github.com/memowe
@@ -26,7 +26,7 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 
 **&copy; 2017 [Mirko Westermeier][mw]** -
 [mirko@westermeier.de][mail] -
-[@memowe][twitter]
+[@memowe][twitter]  
 Grevener Straße 12 - 48149 Münster - Germany
 
 [mw]: http://mirko.westermeier.de
