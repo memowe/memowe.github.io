@@ -19,7 +19,6 @@ I teach regular classes in Münster at [HSP Münster][hsp-salsa] and at [Mambola
 ## References
 
 - International Dance Congress Marrakech
-- International Salsa Festival Hamburg
 - Cologne Salsa Congress
 - Dance Gala NRW Mülheim
 - Salsa de la rosa Bielefeld
