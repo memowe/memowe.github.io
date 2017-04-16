@@ -16,9 +16,10 @@ For fun and for learning purposes, I work on several side projects. This is not 
 [REE]: https://github.com/memowe/regex-engine
 [REE-web]: https://github.com/memowe/regex-engine-web
 
+<!--
 ## Tweethour
-
 TODO
+-->
 
 ---
 
