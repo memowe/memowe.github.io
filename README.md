@@ -22,7 +22,7 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 
 ## What I do
 
-**I work as a research associate and PhD student in computer science education at the University of Münster.** I am a member of the Committee on European Computing Education (ACM-Europe/Informactis Europe) and work on our tutor training program as well as various lectures and seminars. [Read more][CSEdR].
+**I work as a research associate and PhD student in computer science education at the University of Münster.** I am a member of the Committee on European Computing Education (ACM Europe/Informactis Europe). In the group I work on our tutor training program. [Read more][CSEdR].
 
 [CSEdR]: computer_science_education_research.md
 
