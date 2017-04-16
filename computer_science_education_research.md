@@ -2,7 +2,7 @@
 
 # Computer Science Education Research
 
-I work as a research assistant and PhD student at the Computer Science Department of [Westfälische Wilhelms-Universität Münster][wwu] in the [working group of Prof. Dr. Jan Vahrenhold][agv] (Efficient Algorithms and Algorithm Engineering).
+I work as a research associate and PhD student at the Computer Science Department of [Westfälische Wilhelms-Universität Münster][wwu] in the [working group of Prof. Dr. Jan Vahrenhold][agv] (Efficient Algorithms and Algorithm Engineering).
 
 As a member of the [Committee on European Computing Education][cece], a joint project of [ACM Europe][acm-e] and [Informatics Europe][ie], I helped gathering data regarding informatics and digital literacy in European schools. I also built a collaborative [map][cece-map] for visualization and world-wide access to this data. The data will also be published in a report targeting decision makers.
 
