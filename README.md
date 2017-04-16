@@ -42,6 +42,8 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 [@memowe][twitter]  
 Grevener Straße 12 - 48149 Münster - Germany
 
+<br>
+
 [mw]: http://mirko.westermeier.de
 [mail]: mailto:mirko@westermeier.de
 [twitter]: https://twitter.com/memowe

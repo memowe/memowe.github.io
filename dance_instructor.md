@@ -49,6 +49,8 @@ I quit ballroom dancing in late 2010 for personal reasons and immediately starte
 [@memowe][twitter]  
 Grevener Straße 12 - 48149 Münster - Germany
 
+<br>
+
 [mw]: http://mirko.westermeier.de
 [mail]: mailto:mirko@westermeier.de
 [twitter]: https://twitter.com/memowe
