@@ -30,6 +30,11 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 
 [Dancing]: dance_instructor.md
 
+**For fun and recreation** I *work* on several personal software projects ([Read more][PP]). I like flying [RC helicopters][RCH], did half-hearted attempts to become a glider pilot and play some music. I also used to be a sailor and windsurfer. My attempt to stay in shape involves running, swimming and a gym.
+
+[PP]: personal_software_projects.md
+[RCH]: https://www.youtube.com/watch?v=yCBGcm80oTg
+
 ---
 
 **&copy; 2017 [Mirko Westermeier][mw]** -
