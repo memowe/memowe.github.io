@@ -26,7 +26,7 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D`
 
 [CSEdR]: computer_science_education_research.md
 
-**I am a Salsa and Kizomba dancer and instructor.** I do a lot of professional development and travel to many international congresses to improve my dancing and teaching. I teach regular classes and do workshops on international congresses, gala events and regional socials. [Read more][Dancing].
+**I am a Salsa and Kizomba dancer and instructor.** I do a lot of professional development and travel to many international congresses to improve my dancing and teaching. I teach regular local classes and give workshops on congresses and smaller events. [Read more][Dancing].
 
 [Dancing]: dance_instructor.md
 
