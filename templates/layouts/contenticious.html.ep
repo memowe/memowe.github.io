@@ -17,42 +17,8 @@
         %= t nav => (class => 'navbar navbar-default navbar-fixed-top') => begin
             %= include 'navi'
         % end
-        % if ($content_node->path eq '') {
-            %= t div => (class => 'jumbotron') => begin
-                %= t div => (class => 'container') => begin
-                    %= t h1 => begin
-                        %= image 'https://gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=500'
-                        %= config 'name'
-                    % end
-                    %= t p => begin
-                        %= t strong => 'Computer science education researcher, dance instructor, pirate and 3D RC helicopter pilot with a passion for teaching.'
-                        Located in Münster, Germany.
-                    % end
-                    %= t p => (id => 'social') => begin
-                        %= link_to 'https://github.com/memowe' => begin
-                            %= image 'images/icons/github.png' => (alt => 'GitHub')
-                        % end
-                        %= link_to 'https://facebook.com/mirko.westermeier' => begin
-                            %= image 'images/icons/facebook.png' => (alt => 'Facebook')
-                        % end
-                        %= link_to 'https://twitter.com/memowe' => begin
-                            %= image 'images/icons/twitter.png' => (alt => 'Twitter')
-                        % end
-                        %= link_to 'mailto:mirko@westermeier.de' => begin
-                            %= image 'images/icons/email.png' => (alt => 'email')
-                        % end
-                    % end
-                    %= t p => (id => 'pgp') => begin
-                        Public OpenPGP key:
-                        %= link_to '0x730E195D' => '730E195D.asc'
-                        %= t 'br'
-                        Fingerprint:
-                        %= t tt => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
-                    % end
-                % end
-            % end
-            %= javascript 'js/frontpage.js'
-        % }
+        % my $page_prefix = $content_node->path eq '' ? 'frontpage' : 'other_page';
+        %= include $page_prefix . '_modification';
         %= t main => (class => 'container') => begin
             %= content
             %= t footer => include 'footer'
