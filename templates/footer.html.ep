@@ -1,0 +1,11 @@
+%= t p => (id => 'copyright') => begin
+    &copy;
+    %= 1900 + (localtime)[5]
+    %= config('copyright') // config('name') // ''
+    -
+    %= link_to 'mirko@westermeier.de' => 'mailto:mirko@westermeier.de'
+    -
+    %= link_to '@memowe' => 'https://twitter.com/memowe'
+    %= t 'br'
+    Grevener Straße 12 - 48149 Münster - Germany
+% end

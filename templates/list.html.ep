@@ -1,0 +1,11 @@
+<h1><%= $content_node->title %></h1>
+<ul id="content_list">
+% foreach my $c (@{$content_node->children}) {
+    % my $url = rel_url_for 'content', cpath => $c->path, format => 'html';
+    %= t li => begin
+        %= link_to $url => begin
+            %= t strong => $c->title
+        % end
+    % end
+% }
+</ul>
