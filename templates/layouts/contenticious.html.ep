@@ -11,14 +11,19 @@
         %= stylesheet 'css/bootstrap-theme.css'
     % end
     %= t body => begin
-        %= t header => begin
-            %= link_to config('name') // 'contenticious' => rel_url_for 'content', cpath => ''
+        %= t div => (class => 'col-xs-1 col-sm-2 col-lg-3')
+        %= t div => (class => 'col-xs-10 col-sm-8 col-lg-6') => begin
+            %= t header => begin
+                %= link_to config('name') // 'contenticious' => rel_url_for 'content', cpath => ''
+            % end
+            %= t nav => (class => 'navbar navbar-default') => begin
+                %= include 'navi'
+            % end
+            %= t main => begin
+                %= content
+            % end
+            %= t footer => include 'footer'
         % end
-        %= t nav => include 'navi', only => 1
-        %= t main => begin
-            %= include 'navi', only_not => 1
-            %= content
-        % end
-        %= t footer => include 'footer'
+        %= t div => (class => 'col-xs-1 col-sm-2 col-lg-3')
     % end
 % end
