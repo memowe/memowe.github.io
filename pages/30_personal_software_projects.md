@@ -1,4 +1,5 @@
-<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+Title: Personal Software Projects
+navi_name: Software
 
 # Personal Software Projects
 
@@ -20,16 +21,3 @@ For fun and for learning purposes, I work on several side projects. This is not 
 ## Tweethour
 TODO
 -->
-
----
-
-**&copy; 2017 [Mirko Westermeier][mw]** -
-[mirko@westermeier.de][mail] -
-[@memowe][twitter]  
-Grevener Straße 12 - 48149 Münster - Germany
-
-<br>
-
-[mw]: http://mirko.westermeier.de
-[mail]: mailto:mirko@westermeier.de
-[twitter]: https://twitter.com/memowe

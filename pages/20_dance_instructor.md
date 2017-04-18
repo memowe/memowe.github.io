@@ -1,4 +1,5 @@
-<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+Title: Dance and Dance Instructor
+navi_name: Dance
 
 # Dancer and Dance Instructor
 
@@ -41,16 +42,3 @@ I quit ballroom dancing in late 2010 for personal reasons and immediately starte
 
 [resi]: http://www.die-residenz-muenster.de/
 [hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
-
----
-
-**&copy; 2017 [Mirko Westermeier][mw]** -
-[mirko@westermeier.de][mail] -
-[@memowe][twitter]  
-Grevener Straße 12 - 48149 Münster - Germany
-
-<br>
-
-[mw]: http://mirko.westermeier.de
-[mail]: mailto:mirko@westermeier.de
-[twitter]: https://twitter.com/memowe

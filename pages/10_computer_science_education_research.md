@@ -1,4 +1,5 @@
-<img src="images/sunrise_ms.jpg" alt="" style="width: 100%">
+Title: Computer Science Education Research
+navi_name: CSEd Research
 
 # Computer Science Education Research
 
@@ -14,16 +15,3 @@ At the department I work on informatics tutor (teaching assistants) training and
 [acm-e]: https://europe.acm.org
 [ie]: https://informatics-europe.org
 [cece-map]: http://cece-map.informatics-europe.org
-
----
-
-**&copy; 2017 [Mirko Westermeier][mw]** -
-[mirko@westermeier.de][mail] -
-[@memowe][twitter]  
-Grevener Straße 12 - 48149 Münster - Germany
-
-<br>
-
-[mw]: http://mirko.westermeier.de
-[mail]: mailto:mirko@westermeier.de
-[twitter]: https://twitter.com/memowe
