@@ -2,26 +2,37 @@
 
 %= t html => begin
     %= t head => begin
+
         %= t meta => (charset => 'utf-8')
         %= t meta => ('http-equiv' => 'X-UA-Compatible', content => 'IE=edge')
         %= t meta => (name => 'viewport', content => 'width=device-width, initial-scale=1')
+
         % my $t = join ' - ' => grep { $_ } stash('title'), config('name');
         %= t title => $t // 'Unknown'
+
         %= javascript 'js/jquery.js'
         %= javascript 'js/bootstrap.js'
+
         %= stylesheet 'css/bootstrap.css'
         %= stylesheet 'css/bootstrap-theme.css'
         %= stylesheet 'css/style.css'
+
     % end
     %= t body => begin
+
         %= t nav => (class => 'navbar navbar-default navbar-fixed-top') => begin
             %= include 'navi'
         % end
+
         % my $page_prefix = $content_node->path eq '' ? 'frontpage' : 'other_page';
         %= include $page_prefix . '_modification';
+
         %= t main => (class => 'container') => begin
+
             %= content
+
             %= t footer => include 'footer'
+
         % end
     % end
 % end
