@@ -2,28 +2,60 @@
 
 %= t html => begin
     %= t head => begin
+        %= t meta => (charset => 'utf-8')
+        %= t meta => ('http-equiv' => 'X-UA-Compatible', content => 'IE=edge')
+        %= t meta => (name => 'viewport', content => 'width=device-width, initial-scale=1')
         % my $t = join ' - ' => grep { $_ } stash('title'), config('name');
         %= t title => $t // 'Unknown'
-        %= t meta => ('http-equiv' => 'Content-Type', content => 'text/html; charset=UTF-8')
         %= javascript 'js/jquery.js'
         %= javascript 'js/bootstrap.js'
         %= stylesheet 'css/bootstrap.css'
         %= stylesheet 'css/bootstrap-theme.css'
+        %= stylesheet 'css/style.css'
     % end
     %= t body => begin
-        %= t div => (class => 'col-xs-1 col-sm-2 col-lg-3')
-        %= t div => (class => 'col-xs-10 col-sm-8 col-lg-6') => begin
-            %= t header => begin
-                %= link_to config('name') // 'contenticious' => rel_url_for 'content', cpath => ''
+        %= t nav => (class => 'navbar navbar-default navbar-fixed-top') => begin
+            %= include 'navi'
+        % end
+        % if ($content_node->path eq '') {
+            %= t div => (class => 'jumbotron') => begin
+                %= t div => (class => 'container') => begin
+                    %= t h1 => begin
+                        %= image 'https://gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=500'
+                        %= config 'name'
+                    % end
+                    %= t p => begin
+                        %= t strong => 'Computer science education researcher, dance instructor, pirate and 3D RC helicopter pilot with a passion for teaching.'
+                        Located in Münster, Germany.
+                    % end
+                    %= t p => (id => 'social') => begin
+                        %= link_to 'https://github.com/memowe' => begin
+                            %= image 'images/icons/github.png' => (alt => 'GitHub')
+                        % end
+                        %= link_to 'https://facebook.com/mirko.westermeier' => begin
+                            %= image 'images/icons/facebook.png' => (alt => 'Facebook')
+                        % end
+                        %= link_to 'https://twitter.com/memowe' => begin
+                            %= image 'images/icons/twitter.png' => (alt => 'Twitter')
+                        % end
+                        %= link_to 'mailto:mirko@westermeier.de' => begin
+                            %= image 'images/icons/email.png' => (alt => 'email')
+                        % end
+                    % end
+                    %= t p => (id => 'pgp') => begin
+                        Public OpenPGP key:
+                        %= link_to '0x730E195D' => '730E195D.asc'
+                        %= t 'br'
+                        Fingerprint:
+                        %= t tt => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
+                    % end
+                % end
             % end
-            %= t nav => (class => 'navbar navbar-default') => begin
-                %= include 'navi'
-            % end
-            %= t main => begin
-                %= content
-            % end
+            %= javascript 'js/frontpage.js'
+        % }
+        %= t main => (class => 'container') => begin
+            %= content
             %= t footer => include 'footer'
         % end
-        %= t div => (class => 'col-xs-1 col-sm-2 col-lg-3')
     % end
 % end

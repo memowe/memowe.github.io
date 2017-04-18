@@ -1,0 +1,40 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.jumbotron {
+    background-image: url('../images/sunrise_ms.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.jumbotron .container {
+    background-color: rgba(255,255,255,0.8);
+    padding: 2em 3em;
+}
+
+.jumbotron h1 img {
+    height: 1.5em;
+    width: 1.5em;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    margin-right: .3em;
+}
+
+.jumbotron #social {
+    margin-top: 1.5em;
+}
+
+.jumbotron #social a {
+    text-decoration: none;
+}
+
+.jumbotron #social img {
+    height: 1.8em;
+    width: 1.8em;
+    margin-right: .5ex;
+}
+
+.jumbotron #pgp {
+    font-size: 1em;
+}

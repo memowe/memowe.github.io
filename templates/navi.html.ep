@@ -1,27 +1,24 @@
-% my $node      = contenticious->root_node;
-% my @names     = split m|/| => $cpath;
-% my $level     = 1;
-% LOOP: { do { # perldoc perlsyn: do-while isn't a loop
-    % last unless $node->can('children');
-    % my $name      = shift(@names) // '';
-    % my $id_prefix = 'sub' x ($level - 1);
-    % unless (
-    %   (defined stash('only') and stash('only') != $level) or
-    %   (defined stash('only_not') and stash('only_not') == $level)
-    % ) {
+% my $node  = contenticious->root_node;
+% my $here  = (split m|/| => $cpath)[-1];
 
-        %= t ul => (class => 'navi', id => $id_prefix . 'navi') => begin
-            % foreach my $c (@{$node->children}) {
-                % next if $c->name eq 'index';
-                % my $class   = $c->name eq $name ? 'active' : '';
-                % my $url = rel_url_for 'content', cpath => $c->path, format => 'html';
-                %= t li => (class => $class) => begin
-                    %= link_to $c->navi_name => $url
-                % end
-            % }
-        % end
+%= t div => (class => 'navbar-header') => begin
+    %= t button => (type => 'button', class => 'navbar-toggle collapsed', 'data-toggle' => 'collapse', 'data-target' => 'navigation', 'aria-expanded' => 'false') => begin
+        %= t span => (class => 'sr-only') => 'Toggle navigation'
+        %= t span => (class => 'icon_bar')
+        %= t span => (class => 'icon_bar')
+        %= t span => (class => 'icon_bar')
+    % end
+    %= link_to config('name') // 'UNKNOWN' => rel_url_for('content', cpath => ''), (class => 'navbar-brand')
+% end
 
-    % }
-    % $node = $node->find($name) or last;
-    % $level++;
-% } while 1 }
+%= t div => (class => 'collapse navbar-collapse', id => 'navigation') => begin
+    %= t ul => (class => 'nav navbar-nav') => begin
+        % for my $item (@{$node->children}) {
+            % next if $item->name eq 'index';
+            % my $class = $item->name eq $here ? 'active' : '';
+            %= t li => (class => $class) => begin
+                %= link_to $item->navi_name => rel_url_for 'content', cpath => $item->path, format => 'html'
+            % end
+        % }
+    % end
+% end
