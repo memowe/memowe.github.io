@@ -4,6 +4,7 @@ perl:
 
 script:
     - perl webapp.pl dump
+    - echo "mirko.westermeier.de" > dump/CNAME
 
 deploy:
     provider: pages
