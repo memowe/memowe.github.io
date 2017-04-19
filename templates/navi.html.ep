@@ -1,5 +1,5 @@
 % my $node  = contenticious->root_node;
-% my $here  = (split m|/| => $cpath)[-1];
+% my $here  = (split m|/| => $cpath)[-1] // '';
 
 %= t nav => (class => 'navbar navbar-inverse navbar-fixed-top') => begin
     %= t nav => (class => 'container') => begin
