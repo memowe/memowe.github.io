@@ -1,0 +1,15 @@
+language: perl
+perl:
+    - "5.24"
+
+script:
+    - perl webapp.pl dump
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: dump
+    target_branch: master
+    on:
+        branch: contenticious
