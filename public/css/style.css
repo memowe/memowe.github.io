@@ -20,10 +20,11 @@ body {
 }
 
 .jumbotron h1 img {
-    height: 1.5em;
-    width: 1.5em;
+    height: 1.1em;
+    width: 1.1em;
     box-shadow: 0 0 5px rgba(0,0,0,0.7);
-    margin-right: .3em;
+    margin-right: .2em;
+    vertical-align: top;
 }
 
 .jumbotron #social {
