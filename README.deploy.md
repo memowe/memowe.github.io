@@ -1,4 +1,4 @@
-# Personal website of Mirko Westermeier (http://mirko.westermeier.de)
+# Personal website [mirko.westermeier.de](http://mirko.westermeier.de)
 
 [![Build Status](https://travis-ci.org/memowe/memowe.github.io.svg?branch=contenticious)](https://travis-ci.org/memowe/memowe.github.io)
 
