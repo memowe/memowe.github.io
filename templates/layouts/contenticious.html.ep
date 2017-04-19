@@ -20,9 +20,7 @@
     % end
     %= t body => begin
 
-        %= t nav => (class => 'navbar navbar-default navbar-fixed-top') => begin
-            %= include 'navi'
-        % end
+        %= include 'navi'
 
         % my $page_prefix = $content_node->path eq '' ? 'frontpage' : 'other_page';
         %= include $page_prefix . '_modification';
