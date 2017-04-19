@@ -3,6 +3,14 @@ body {
     padding-bottom: 20px;
 }
 
+a, a:hover {
+    color: #960;
+}
+
+footer a, footer a:hover {
+    color: #ca7;
+}
+
 .jumbotron {
     background-image: url('../images/sunrise_ms.jpg');
     background-size: cover;
