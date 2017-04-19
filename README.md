@@ -1,5 +1,5 @@
 # Content generation of http://mirko.westermeier.de/
 
-![](https://travis-ci.org/memowe/memowe.github.io.svg?branch=contenticious)
+[![Build Status](https://travis-ci.org/memowe/memowe.github.io.svg?branch=contenticious)](https://travis-ci.org/memowe/memowe.github.io)
 
 using [Contenticious](http://p3rl.org/Contenticious).
