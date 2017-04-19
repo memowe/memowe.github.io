@@ -43,3 +43,25 @@ body {
 .jumbotron #pgp {
     font-size: 1em;
 }
+
+footer {
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px solid lightgrey;
+    color: #aaa;
+}
+
+footer #copyright {
+    margin-bottom: 1.5em; /* necessary in sm/xs */
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+footer .social img {
+    height: 1.5em;
+    width: 1.5em;
+    margin-right: 2ex;
+}

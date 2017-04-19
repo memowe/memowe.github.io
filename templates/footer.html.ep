@@ -1,11 +1,32 @@
-%= t p => (id => 'copyright') => begin
-    &copy;
-    %= 1900 + (localtime)[5]
-    %= config('copyright') // config('name') // ''
-    -
-    %= link_to 'mirko@westermeier.de' => 'mailto:mirko@westermeier.de'
-    -
-    %= link_to '@memowe' => 'https://twitter.com/memowe'
-    %= t 'br'
-    Grevener Straße 12 - 48149 Münster - Germany
+%= t div => (class => 'row') => begin
+    %= t div => (class => 'col-md-8') => begin
+        %= t p => (id => 'copyright') => begin
+
+            &copy; <%= 1900 + (localtime)[5] %> <%= config 'copyright' %>
+            -
+            %= link_to 'mirko@westermeier.de' => 'mailto:mirko@westermeier.de'
+            -
+            %= link_to '@memowe' => 'https://twitter.com/memowe'
+
+            %= t 'br'
+            Grevener Straße 12 - 48149 Münster - Germany
+        % end
+    % end
+
+    %= t div => (class => 'col-md-4 text-right-md text-right-lg social') => begin
+
+        %= link_to 'https://github.com/memowe' => begin
+            %= image 'images/icons/gray/github.png' => (alt => 'GitHub', title => 'GitHub')
+        % end
+        %= link_to 'https://facebook.com/mirko.westermeier' => begin
+            %= image 'images/icons/gray/facebook.png' => (alt => 'Facebook', title => 'Facebook')
+        % end
+        %= link_to 'https://twitter.com/memowe' => begin
+            %= image 'images/icons/gray/twitter.png' => (alt => 'Twitter', title => 'Twitter')
+        % end
+        %= link_to 'mailto:mirko@westermeier.de' => begin
+            %= image 'images/icons/gray/email.png' => (alt => 'email', title => 'email')
+        % end
+
+    % end
 % end

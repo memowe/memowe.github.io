@@ -15,6 +15,7 @@
 
         %= stylesheet 'css/bootstrap.css'
         %= stylesheet 'css/bootstrap-theme.css'
+        %= stylesheet 'css/text_alignment.css'
         %= stylesheet 'css/style.css'
 
     % end
