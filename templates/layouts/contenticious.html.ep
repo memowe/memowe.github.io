@@ -25,12 +25,9 @@
         % my $page_prefix = $content_node->path eq '' ? 'frontpage' : 'other_page';
         %= include $page_prefix . '_modification';
 
-        %= t main => (class => 'container') => begin
+        %= t main => (class => 'container') => content
 
-            %= content
+        %= t footer => (class => 'container') => include 'footer'
 
-            %= t footer => include 'footer'
-
-        % end
     % end
 % end
