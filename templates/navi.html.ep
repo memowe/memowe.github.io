@@ -11,7 +11,11 @@
                     %= t span => (class => 'icon-bar')
                 % }
             % end
-            %= link_to config('name') => rel_url_for('content', cpath => '') => (class => 'navbar-brand')
+            %= t span => (class => 'navbar-nav') => begin
+                %= t span => (class => $here eq '' ? 'active' : '') => begin
+                    %= link_to config('name') => rel_url_for('content', cpath => '') => (class => 'navbar-brand')
+                % end
+            % end
         % end
 
         %= t div => (id => 'navbar', class => 'collapse navbar-collapse') => begin
