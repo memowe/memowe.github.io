@@ -5,6 +5,7 @@ perl:
 script:
     - perl webapp.pl dump
     - echo "mirko.westermeier.de" > dump/CNAME
+    - cp README.deploy.md dump/README.md
 
 deploy:
     provider: pages
