@@ -10,12 +10,15 @@ For fun and for learning purposes, I work on several side projects. This is not 
 - **[REE][REE]** (Regular Expression Engine, *WIP*) is a simple regular expression compiler which offers some inspection. I also wrote a simple [web interface][REE-web] for this engine for better inspection.
 - **tGit** (teaching/tiny/toy git, *WIP*) is a version control system framework similar to git, so its core is a hash-based file system. This will be used to explore advanced concepts of the version control universe, for example merging strategies.
 
+There are various other projects not mentioned here. The most interesting would be the [@koelner_dom][dom]. Information about my clerical twitter services 😄&nbsp; will follow.
+
 [contenticious]: http://memowe.github.io/contenticious/
 [contenticious-repo]: https://github.com/memowe/contenticious
 [mojolicious]: https://github.com/kraih/mojo
 [perlisp]: https://github.com/memowe/perlisp
 [REE]: https://github.com/memowe/regex-engine
 [REE-web]: https://github.com/memowe/regex-engine-web
+[dom]: https://twitter.com/koelner_dom
 
 <!--
 ## Tweethour
