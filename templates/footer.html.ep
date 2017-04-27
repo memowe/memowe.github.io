@@ -4,7 +4,7 @@
             % my @years = (2017, 1900 + (localtime)[5]);
             % @years = sort keys %{{map {$_=>1} @years}}; # remove duplicates
             &copy; <%= join '-' => @years %>
-            %= config('copyright')
+            %= link_to config('copyright') => 'mailto:mirko@westermeier.de'
             %= t 'br'
             Grevener Straße 12 - 48149 Münster - Germany
         % end
