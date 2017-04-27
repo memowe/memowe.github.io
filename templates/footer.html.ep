@@ -1,7 +1,10 @@
 %= t div => (class => 'row') => begin
     %= t div => (class => 'col-md-8') => begin
         %= t p => (id => 'copyright') => begin
-            &copy; <%= 1900 + (localtime)[5] %> <%= config 'copyright' %>
+            % my @years = (2017, 1900 + (localtime)[5]);
+            % @years = sort keys %{{map {$_=>1} @years}}; # remove duplicates
+            &copy; <%= join '-' => @years %>
+            %= config('copyright')
             %= t 'br'
             Grevener Straße 12 - 48149 Münster - Germany
         % end
