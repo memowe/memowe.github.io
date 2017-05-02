@@ -23,10 +23,17 @@
 
         %= include 'navi'
 
-        % my $page_prefix = $content_node->path eq '' ? 'frontpage' : 'other_page';
-        %= include $page_prefix . '_modification';
+        % if ($content_node->path eq '') {
 
-        %= t main => (class => 'container') => content
+            %= include 'frontpage_modification'
+            %= t main => (class => 'container') => content
+
+        % } else {
+
+            %= include 'other_page_modification'
+            %= include 'columnify', html => content
+
+        % }
 
         %= t footer => (class => 'container') => include 'footer'
 
