@@ -1,6 +1,6 @@
 <!doctype html>
 
-%= t html => begin
+%= t html => (lang => 'en') => begin
     %= t head => begin
 
         %= t meta => (charset => 'utf-8')
