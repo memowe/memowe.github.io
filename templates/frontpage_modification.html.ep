@@ -1,7 +1,7 @@
 %= t div => (class => 'jumbotron') => begin
     %= t div => (class => 'container') => begin
         %= t h1 => begin
-            %= image 'https://gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=500'
+            %= image 'https://gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=500', (alt => '')
             %= config 'name'
         % end
         %= t p => begin
@@ -30,7 +30,7 @@
             %= link_to '0x730E195D' => '730E195D.asc'
             %= t 'br'
             Fingerprint:
-            %= t tt => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
+            %= t code => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
         % end
     % end
 % end
