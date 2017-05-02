@@ -18,6 +18,9 @@
             %= link_to 'https://twitter.com/memowe' => begin
                 %= image 'images/icons/twitter.png' => (alt => 'Twitter', title => 'Twitter')
             % end
+            %= link_to 'https://instagram.com/mirkeau' => begin
+                %= image 'images/icons/instagram.png' => (alt => 'Instagram', title => 'Instagram')
+            % end
             %= link_to 'mailto:mirko@westermeier.de' => begin
                 %= image 'images/icons/email.png' => (alt => 'email', title => 'email')
             % end
