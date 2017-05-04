@@ -12,11 +12,11 @@
             %= link_to 'https://github.com/memowe' => begin
                 %= image 'images/icons/github.png' => (alt => 'GitHub', title => 'GitHub')
             % end
-            %= link_to 'https://facebook.com/mirko.westermeier' => begin
-                %= image 'images/icons/facebook.png' => (alt => 'Facebook', title => 'Facebook')
-            % end
             %= link_to 'https://twitter.com/memowe' => begin
                 %= image 'images/icons/twitter.png' => (alt => 'Twitter', title => 'Twitter')
+            % end
+            %= link_to 'https://facebook.com/mirko.westermeier' => begin
+                %= image 'images/icons/facebook.png' => (alt => 'Facebook', title => 'Facebook')
             % end
             %= link_to 'https://instagram.com/mirkeau' => begin
                 %= image 'images/icons/instagram.png' => (alt => 'Instagram', title => 'Instagram')
