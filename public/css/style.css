@@ -53,6 +53,10 @@ footer a, footer a:hover {
     font-size: 1em;
 }
 
+.jumbotron #pgp .fingerprint {
+    font-family: monospace;
+}
+
 main li {
     margin-bottom: .5em;
 }

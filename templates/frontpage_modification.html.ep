@@ -30,7 +30,7 @@
             %= link_to '0x730E195D' => '730E195D.asc'
             %= t 'br'
             Fingerprint:
-            %= t code => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
+            %= t span => (class => 'fingerprint') => '55A8 9646 9B58 60AC B5BC  9661 FDD4 93C0 730E 195D'
         % end
     % end
 % end
