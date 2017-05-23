@@ -15,6 +15,7 @@ I teach regular classes in Münster at [HSP Münster][hsp-salsa] and at [Mambola
 - International Dance Congress Marrakech
 - Cologne Salsa Congress
 - Dance Gala NRW Mülheim
+- Mambo's Social Project Essen
 - Salsa de la rosa Bielefeld
 - Sunday Salsa Soiree Münster
 - Salsa & Sensual Lounge Münster
