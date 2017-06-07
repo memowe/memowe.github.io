@@ -5,6 +5,8 @@ navi_name: Dance
 
 I used to be a competitive ballroom dancer. Now I am a Salsa and Kizomba dancer and instructor. I travel all around Europe and the world to explore and exchange ideas and share a wonderful time on the dancefloor as well as in workshops with many international salsa dancers and teachers.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/423SGg_u7V0?rel=0" frameborder="0" allowfullscreen></iframe>
+
 I teach regular classes in Münster at [HSP Münster][hsp-salsa] and at [Mambolatinjazz Osnabrück][mambolatinjazz]. I am also booked for workshops on congresses, some socials as well as in other dance schools:
 
 [hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
