@@ -29,7 +29,7 @@ I started dancing in the late 90s and quickly moved on to competitive ballroom d
 
 [![][bonn_tn]][bonn]
 [![][lma_tn]][lma]
-[![][goc_tn]][goc]  
+[![][goc_tn]][goc]<br>
 <small>Pictures: Eva-Maria Sangmeister, Cliff Pereira.</small>
 
 [bonn]: images/dance/bonn.jpg
