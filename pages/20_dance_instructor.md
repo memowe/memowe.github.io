@@ -5,10 +5,33 @@ navi_name: Dance
 
 I used to be a competitive ballroom dancer. Now I am a Salsa and Kizomba dancer and instructor. I travel all around Europe and the world to explore and exchange ideas and share a wonderful time on the dancefloor as well as in workshops with many international salsa dancers and teachers.
 
-I teach regular classes in Münster at [HSP Münster][hsp-salsa] and at [Mambolatinjazz Osnabrück][mambolatinjazz]. I am also booked for workshops on congresses, some socials as well as in other dance schools:
+<div class="row dance-school-logos">
+    <div class="col-sm-4">
+        <a href="http://www.floracion.de/">
+            <img src="images/dance/floracion.png" alt="" width="180">
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="https://web.facebook.com/salsa.osnabrueck">
+            <img src="images/dance/mambolatinjazz.jpg" alt="" width="180">
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html">
+            <img src="images/dance/hsp.svg" alt="" width="180">
+        </a>
+    </div>
+</div>
+<style type="text/css">
+    .dance-school-logos div { text-align: center }
+    .dance-school-logos img { margin: 1em }
+</style>
 
-[hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
+I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion], in Osnabrück at [Mambolatinjazz][mambolatinjazz] and in Münster at [HSP Münster][hsp-salsa]. I am also booked for workshops on congresses, some socials as well as in other dance schools:
+
+[floracion]: http://www.floracion.de/
 [mambolatinjazz]: https://web.facebook.com/salsa.osnabrueck
+[hsp-salsa]: https://muenster.hochschulsport-nrw.de/angebote/aktueller_zeitraum/_Salsa.html
 
 ## References
 
