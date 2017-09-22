@@ -7,7 +7,7 @@ I work as a research associate and PhD student at the Computer Science Departmen
 
 As a member of the [Committee on European Computing Education][cece], a joint project of [ACM Europe][acm-e] and [Informatics Europe][ie], I helped gathering data regarding informatics and digital literacy in European schools. I also built a collaborative [map][cece-map] for visualization and world-wide access to this data. The results were [published][cece-news] in a report targeting decision makers. [It is available online (PDF download)][cece-report].
 
-At the department I work on informatics tutor (teaching assistants) training and try to learn from informatics teacher education in this context. I also coordinate and support project seminars and lectures of the group.
+At the department I work on informatics tutor (teaching assistants) training and try to understand what tutors learn through teaching in this context. I also coordinate and support project seminars and lectures of the group.
 
 [wwu]: https://wwu.de
 [agv]: https://www.uni-muenster.de/Informatik.AGVahrenhold/
