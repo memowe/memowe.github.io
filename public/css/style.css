@@ -30,7 +30,7 @@ footer a, footer a:hover {
 .jumbotron h1 img {
     height: 1.1em;
     width: 1.1em;
-    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.4);
     margin-right: .2em;
     vertical-align: top;
 }
