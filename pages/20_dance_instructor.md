@@ -36,6 +36,7 @@ I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion],
 ## References
 
 - International Dance Congress Marrakech
+- International Salsa Festival Hamburg
 - Cologne Salsa Congress
 - Dance Gala NRW Mülheim
 - Mambo's Social Project Essen
