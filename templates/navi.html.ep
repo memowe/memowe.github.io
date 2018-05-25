@@ -23,6 +23,7 @@
 
                 % for my $item (@{$node->children}) {
                     % next if $item->name eq 'index';
+                    % next if $item->name eq 'privacy';
                     % my $class = $item->name eq $here ? 'active' : '';
 
                     %= t li => (class => $class) => begin
