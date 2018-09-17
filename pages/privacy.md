@@ -7,8 +7,8 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 ## Verantwortlicher
 
 Mirko Westermeier<br>
-Grevener Str. 12<br>
-48149 Münster
+Überwasserstr. 33<br>
+48143 Münster
 
 ## Arten der verarbeiteten Daten
 

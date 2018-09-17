@@ -7,7 +7,7 @@
             %= link_to config('copyright') => 'mailto:mirko@westermeier.de'
             - <%= link_to Datenschutzerklärung => rel_url_for 'content', cpath => 'privacy', format => 'html' %>
             %= t 'br'
-            Grevener Straße 12 - 48149 Münster - Germany
+            Überwasserstr. 33 - 48143 Münster - Germany
         % end
     % end
 
