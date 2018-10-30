@@ -3,9 +3,9 @@ navi_name: Mirko Westermeier
 
 ## What I do
 
-**I work as a research associate and PhD student in computer science education at the University of Münster.** I am a member of the Committee on European Computing Education (ACM Europe/Informactis Europe). In the group I work on our tutor training program. [Read more][CSEdR].
+**I work as a software developer at the Service Center for Digital Humanities at the University of Münster.** I am also a member of the Committee on European Computing Education (ACM Europe/Informactis Europe). [Read more][DH].
 
-[CSEdR]: computer_science_education_research.html
+[DH]: digital_humanities.html
 
 **I am a Salsa and Kizomba dancer and instructor.** I do a lot of professional development and travel to many international congresses to improve my dancing and teaching. I teach regular local classes and give workshops on congresses and smaller events. [Read more][Dancing].
 
