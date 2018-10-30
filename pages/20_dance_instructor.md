@@ -39,6 +39,7 @@ I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion],
 - International Salsa Festival Hamburg
 - Cologne Salsa Congress
 - Dance Gala NRW Mülheim
+- Colour Up Your Sunday Salsa Social
 - Mambo's Social Project Essen
 - Salsa de la rosa Bielefeld
 - Sunday Salsa Soiree Münster
