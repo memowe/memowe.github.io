@@ -11,7 +11,7 @@ Besides my work at the university and the web authoring, web design and web prog
 - **[REE][REE]** (Regular Expression Engine, *WIP*) is a simple regular expression compiler which offers some inspection. I also wrote a simple [web interface][REE-web] for this engine for better inspection.
 - **tGit** (teaching/tiny/toy git, *WIP*) is a version control system framework similar to git, so its core is a hash-based file system. This will be used to explore advanced concepts of the version control universe, for example merging strategies.
 
-There are various other projects not mentioned here.
+There are various other small projects including a self-contained URL website generator, a viral social media "game" generator, a concept map / ontology creation and analysis tool, a file-system-based markdown note app and others not mentioned here.
 
 [contenticious]: http://memowe.github.io/contenticious/
 [contenticious-repo]: https://github.com/memowe/contenticious
