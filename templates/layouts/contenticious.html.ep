@@ -7,7 +7,7 @@
         %= t meta => ('http-equiv' => 'X-UA-Compatible', content => 'IE=edge')
         %= t meta => (name => 'viewport', content => 'width=device-width, initial-scale=1')
 
-        %= t link => (rel => 'icon', type => 'image/png', src => 'https://s.gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=96')
+        %= t link => (rel => 'icon', type => 'image/png', href => 'https://s.gravatar.com/avatar/7c3152289ebed501d45a3a3488b45720?s=96')
 
         % my $t = join ' - ' => grep { $_ } stash('title'), config('name');
         %= t title => $t // 'Unknown'
