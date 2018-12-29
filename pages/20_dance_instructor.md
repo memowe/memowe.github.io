@@ -27,7 +27,7 @@ I used to be a competitive ballroom dancer. Now I am a Salsa and Kizomba dancer 
     .dance-school-logos img { margin: 1em }
 </style>
 
-I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion], in Osnabrück at [Mambolatinjazz][mambolatinjazz] and in Münster at [HSP Münster][hsp-salsa]. I am also booked for workshops on congresses, some socials as well as in other dance schools:
+I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion], in Osnabrück at [Mambolatinjazz][mambolatinjazz] and in Münster at [HSP Münster][hsp-salsa]. I am also booked for workshops on congresses, as a Salsa DJ on some socials as well as in other dance schools:
 
 [floracion]: http://www.floracion.de/
 [mambolatinjazz]: https://web.facebook.com/salsa.osnabrueck
@@ -37,16 +37,21 @@ I teach regular classes in Bielefeld at [Floración Dance & Fitness][floracion],
 
 - International Dance Congress Marrakech
 - International Salsa Festival Hamburg
+- Euro Salsa & Sensual Festival
 - Cologne Salsa Congress
 - Dance Gala NRW Mülheim
+- Mambolution Münster
 - Colour Up Your Sunday Salsa Social
 - Mambo's Social Project Essen
+- Salsa y Mas bei U-Dance Hannover
+- Floración Social Bielefeld
 - Salsa de la rosa Bielefeld
 - Sunday Salsa Soiree Münster
 - Salsa & Sensual Lounge Münster
 - Mittelparty & Abschlussball HSP Münster
 - Salsa Motion Dortmund
 - Salsa Vibes Essen
+- Cuba Nova Münster
 
 ## History
 
