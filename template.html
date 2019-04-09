@@ -3,10 +3,33 @@
 <head>
     <meta charset="utf-8">
     <title>$title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style type="text/css">
+        main {
+            margin-top: 20%;
+            padding: 3em !important;
+            box-shadow: 0 -6px 12px -6px lightgrey;
+        }
+        .img-col, .text-col {padding: 1em !important}
+        .img-col {padding: 1em; text-align: center}
+        .img-col #slogan {margin-top: 1em; font-size: 1.3em; font-style: italic}
+        .text-col > * {margin-left: 20px; margin-right: 20px}
+    </style>
 </head>
 <body>
+    <main class="container">
+        <div class="row">
+            <div class="img-col col-lg-4">
+                <img src="https://gravatar.com/avatar/$gravatar$?s=200" width="200" height="200">
+                <p id="slogan">$slogan$</p>
+            </div>
+            <div class="text-col col-lg-8">
 
 $body$
 
+            </div>
+        </div>
+    </main>
 </body>
 </html>
