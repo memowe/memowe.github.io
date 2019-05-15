@@ -7,6 +7,8 @@ gravatar: 2321454fdd1cd19ff478bec4ca5b163f
 # Mirko Westermeier
 
 **Service Center Digital Humanities**  
+Westfälische Wilhelms-Universität Münster
+
 Scharnhorststraße 103/109  
 48151 Münster
 
