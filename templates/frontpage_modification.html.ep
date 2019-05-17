@@ -5,7 +5,7 @@
             %= config 'name'
         % end
         %= t p => begin
-            %= t strong => 'Computer science education researcher, dance instructor, pirate and 3D RC helicopter pilot with a passion for teaching.'
+            %= t strong => 'Software developer, dance instructor and 3D RC helicopter pilot with a passion for teaching.'
             Located in Münster, Germany.
         % end
         %= t p => (id => 'social') => begin
