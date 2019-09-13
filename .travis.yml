@@ -13,5 +13,6 @@ deploy:
     github_token: $GITHUB_TOKEN
     local_dir: dump
     target_branch: master
+    keep_history: true
     on:
         branch: contenticious
