@@ -1,7 +1,7 @@
 html:
 	mkdir -p public
 	cp meta.ttf public/
-	cp bg-wwu.png public/
+	cp *.png public/
 	pandoc \
 		--to=html \
 		--template=template.html \
