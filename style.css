@@ -1,55 +1,68 @@
-@font-face {
-    font-family: 'Meta';
-    src: url('meta.ttf');
+html, body {
+    height          : 100%;
+    margin          : 0;
+    padding         : 0
 }
-html, body { height: 100%; margin: 0; padding: 0 }
+
+@font-face { font-family: 'Meta'; src: url('meta.ttf') }
 body {
-    font-family: Meta, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #009dd1 url('bg-wwu.png') no-repeat bottom right;
-    background-size: 80%;
+    font-family     : Meta, sans-serif;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    background      : #009dd1 url('bg-wwu.png') no-repeat bottom right;
+    background-size : 80%;
 }
+
 main {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 800px;
-    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.4);
+    display         : flex;
+    flex-flow       : row wrap;
+    max-width       : 800px;
+    box-shadow      : 0 20px 40px 0 rgba(0,0,0,0.4);
     background-color: rgba(255, 255, 255, .7);
-    color: black;
+    color           : black;
 }
+
 #header  {
-    flex: 1 0 200px;
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+    flex            : 1 0 200px;
+    text-align      : center;
+    display         : flex;
+    flex-flow       : column;
+    align-items     : center;
+    justify-content : center;
 }
+
 #content {
-    flex: 2 1 auto;
+    flex            : 2 1 auto;
     background-color: rgba(255, 255, 255, 0.5);
 }
+
 #header, #content {
-    padding: 2rem;
-}
-#header #slogan {
-    font-style: italic;
-}
-#content h1, #content a:link, #content a:visited { color: #00578a }
-#content hr {
-    border: none;
-    border-top: thin solid #00578a;
-    margin: 1.5em 0
-}
-#content .links a {
-    margin: 0 .8em;
-}
-#content .links img {
-    width: 2.5em;
-    height: 2.5em;
+    padding         : 2rem;
 }
 #content > :first-child { margin-top: 0 }
 #content > :last-child { margin-bottom: 0 }
+
+#header #slogan {
+    font-style      : italic;
+}
+
+#content h1, #content a:link, #content a:visited {
+    color           : #00578a;
+}
+
+#content hr {
+    border          : none;
+    border-top      : thin solid #00578a;
+    margin          : 1.5em 0
+}
+
+#content .links a {
+    margin          : 0 .8em;
+}
+
+#content .links img {
+    width           : 2.5em;
+    height          : 2.5em;
+}
