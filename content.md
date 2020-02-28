@@ -32,7 +32,7 @@ Fingerprint: `55A8 9646 9B58 60AC B5BC 9661 FDD4 93C0 730E 195D`
 [zgl]: https://zivgitlab.uni-muenster.de/memowe
 [gh]: https://github.com/memowe
 [mwde]: http://mirko.westermeier.de/
-[img-gl]: gitlab.png "@memowe auf ZIVGitLab"
-[img-gh]: github.png "@memowe auf GitHub"
-[img-www]: www.png "mirko.westermeier.de"
+[img-gl]: images/gitlab.png "@memowe auf ZIVGitLab"
+[img-gh]: images/github.png "@memowe auf GitHub"
+[img-www]: images/www.png "mirko.westermeier.de"
 [pgp]: http://mirko.westermeier.de/730E195D.asc

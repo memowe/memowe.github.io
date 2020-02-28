@@ -1,8 +1,6 @@
 html:
 	mkdir -p public
-	cp style.css public/
-	cp meta.ttf public/
-	cp *.png public/
+	cp -r static/* public/
 	pandoc \
 		--to=html \
 		--template=template.html \
