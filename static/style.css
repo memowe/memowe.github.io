@@ -66,3 +66,16 @@ main {
     width           : 2.5em;
     height          : 2.5em;
 }
+
+#content .pgp {
+    font-size       : .9rem;
+    color           : #666;
+}
+
+#content .pgp p {
+    margin          : 2em 0 0;
+}
+
+#content .pgp a {
+    color           : #666 !important;
+}
