@@ -10,10 +10,9 @@ $ make
 
 ## Copyright and license
 
-(c) 2019 Mirko Westermeier
+(c) Mirko Westermeier
 
-Released under the MIT license. See [LICENSE.txt][mit] for details.
+All rights reserved.
 
 [pd]: https://pandoc.org/
 [glp]: https://about.gitlab.com/product/pages/
-[mit]: LICENSE.txt
