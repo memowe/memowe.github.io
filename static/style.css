@@ -42,8 +42,6 @@ main {
 #header, #content {
     padding         : 2rem;
 }
-#content > :first-child { margin-top: 0 }
-#content > :last-child { margin-bottom: 0 }
 
 #header #slogan {
     font-style      : italic;
@@ -51,6 +49,10 @@ main {
 
 #content h1, #content a:link, #content a:visited {
     color           : #00578a;
+}
+
+#content h1 {
+    margin-top      : 0;
 }
 
 #content hr {
