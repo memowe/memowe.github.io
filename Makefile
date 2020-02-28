@@ -1,5 +1,6 @@
 html:
 	mkdir -p public
+	cp style.css public/
 	cp meta.ttf public/
 	cp *.png public/
 	pandoc \
