@@ -3,33 +3,61 @@
 <head>
     <meta charset="utf-8">
     <title>$title$</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-        main {
-            margin-top: 20%;
-            padding: 3em !important;
-            box-shadow: 0 -6px 12px -6px lightgrey;
+        @font-face {
+            font-family: 'Meta';
+            src: url('meta.ttf');
         }
-        .img-col, .text-col {padding: 1em !important}
-        .img-col {padding: 1em; text-align: center}
-        .img-col #slogan {margin-top: 1em; font-size: 1.3em; font-style: italic}
-        .text-col > * {margin-left: 20px; margin-right: 20px}
+        html, body { height: 100%; margin: 0; padding: 0 }
+        body {
+            font-family: Meta, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #009dd1 url('bg-wwu.png') no-repeat bottom right;
+            background-size: 80%;
+        }
+        main {
+            display: flex;
+            flex-flow: row wrap;
+            max-width: 800px;
+            box-shadow: 0 10px 30px 0 rgba(0,0,0,0.5);
+            background-color: rgba(255, 255, 255, .7);
+            color: black;
+        }
+        #header  {
+            flex: 1 0 200px;
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #content {
+            flex: 2 1 auto;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        #header, #content {
+            padding: 1.5rem;
+        }
+        #header #slogan {
+            font-style: italic;
+        }
+        #content h1, #content a:link, #content a:visited { color: #00578a }
     </style>
 </head>
 <body>
-    <main class="container">
-        <div class="row">
-            <div class="img-col col-lg-4">
-                <img src="https://gravatar.com/avatar/$gravatar$?s=200" width="200" height="200" alt="">
-                <p id="slogan">$slogan$</p>
-            </div>
-            <div class="text-col col-lg-8">
-
-$body$
-
-            </div>
+    <main>
+        <div id="header">
+            <img src="https://gravatar.com/avatar/$gravatar$?s=150" width="150" height="150" alt="">
+            <p id="slogan">$slogan$</p>
         </div>
+        <section id="content">
+
+    $body$
+
+        </section>
     </main>
 </body>
 </html>
