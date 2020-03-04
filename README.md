@@ -1,6 +1,6 @@
 # Personal ZIVGitLab Pages Website
 
-Compiled by [pandoc][pd] and served by [GitLab Pages][glp].
+Compiled by [pandoc][pd] and served by [GitLab Pages][glp]. Requires a recent pandoc version with `fenced_divs`.
 
 ## Compile
 
