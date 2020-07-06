@@ -22,12 +22,12 @@ Scharnhorststraße 103/109
 [![GitHub: \@memowe][img-gh]][gh]
 [![mirko.westermeier.de][img-www]][mwde]
 :::
-
+<!--
 ::: pgp
 Public OpenPGP key: [0x730E195D][pgp]  
 Fingerprint: `55A8 9646 9B58 60AC B5BC 9661 FDD4 93C0 730E 195D`
 :::
-
+-->
 [mail]: mailto:mirko.westermeier@uni-muenster.de
 [zgl]: https://zivgitlab.uni-muenster.de/memowe
 [gh]: https://github.com/memowe
