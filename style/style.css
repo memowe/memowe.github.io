@@ -4,9 +4,8 @@ html, body {
     padding         : 0
 }
 
-@font-face { font-family: 'Meta'; src: url('../fonts/meta.ttf') }
 body {
-    font-family     : Meta, sans-serif;
+    font-family     : 'Noto Sans', sans-serif;
     display         : flex;
     flex-direction  : column;
     align-items     : center;
@@ -52,6 +51,7 @@ main {
 }
 
 #content h1 {
+    font-weight     : normal;
     margin-top      : 0;
 }
 
