@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>$title$</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sanitize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.14.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@1.2.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/yaml-front-matter@4.1.0"></script>
+</head>
+<body>
+    <main>
+        <div id="header">
+            <img src="" width="150" height="150" alt="">
+            <p id="slogan"></p>
+        </div>
+        <section id="content"></section>
+    </main>
+    <script>
+        fetch('content.md').then(res => res.text())
+            .then(md => yamlFront.loadFront(md))
+            .then(fm => ({meta: fm, html: marked(fm.__content)}))
+            .then(page => {
+                const gravatarUrl = `https://gravatar.com/avatar/${page.meta.gravatar}?s=150`;
+                document.querySelector('#header img').setAttribute('src', gravatarUrl);
+                document.querySelector('title').textContent = page.meta.title;
+                document.querySelector('#slogan').textContent = page.meta.slogan;
+                document.querySelector('#content').innerHTML = page.html;
+            });
+    </script>
+</body>
+</html>

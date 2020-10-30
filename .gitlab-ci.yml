@@ -1,16 +1,10 @@
-image: alpine:3.9.2
-
-before_script:
-    - apk update
-    - apk add make wget
-    - wget --quiet https://github.com/jgm/pandoc/releases/download/2.9.2/pandoc-2.9.2-linux-amd64.tar.gz
-    - tar xzf pandoc-2.9.2-linux-amd64.tar.gz
-    - mv pandoc-2.9.2/bin/pandoc /usr/bin/pandoc
+image: alpine
 
 pages:
     stage: deploy
     script:
-        - make
+        - mkdir public
+        - cp -r ./* public/
     artifacts:
         paths:
             - public

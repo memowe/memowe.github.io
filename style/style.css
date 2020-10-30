@@ -4,14 +4,14 @@ html, body {
     padding         : 0
 }
 
-@font-face { font-family: 'Meta'; src: url('meta.ttf') }
+@font-face { font-family: 'Meta'; src: url('../fonts/meta.ttf') }
 body {
     font-family     : Meta, sans-serif;
     display         : flex;
     flex-direction  : column;
     align-items     : center;
     justify-content : center;
-    background      : #009dd1 url('images/bg-wwu.png') no-repeat bottom right;
+    background      : #009dd1 url('../images/bg-wwu.png') no-repeat bottom right;
     background-size : 80%;
 }
 
