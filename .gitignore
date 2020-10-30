@@ -1,5 +1,2 @@
 # Vim swap files
 *.sw[a-p]
-
-# Static page directory
-public

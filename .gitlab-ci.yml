@@ -1,10 +1,7 @@
-image: alpine
-
 pages:
     stage: deploy
     script:
-        - mkdir public
-        - cp -r ./* public/
+        - echo "You're looking beautiful today!"
     artifacts:
         paths:
             - public
