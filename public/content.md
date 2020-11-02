@@ -17,19 +17,19 @@ Scharnhorststraße 103/109
 
 ---
 
-<div class="links">
+<div class="links" markdown="1">
 
 [![ZIV GitLab: \@memowe][img-gl]][zgl]
 [![GitHub: \@memowe][img-gh]][gh]
 [![mirko.westermeier.de][img-www]][mwde]
 
-</div>
-
-[mail]: mailto:mirko.westermeier@uni-muenster.de
 [zgl]: https://zivgitlab.uni-muenster.de/memowe
 [gh]: https://github.com/memowe
 [mwde]: http://mirko.westermeier.de/
 [img-gl]: images/gitlab.png "@memowe auf ZIVGitLab"
 [img-gh]: images/github.png "@memowe auf GitHub"
 [img-www]: images/www.png "mirko.westermeier.de"
-[pgp]: http://mirko.westermeier.de/730E195D.asc
+
+</div>
+
+[mail]: mailto:mirko.westermeier@uni-muenster.de

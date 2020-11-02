@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sanitize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.14.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked@1.2.2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/yaml-front-matter@4.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
 </head>
 <body>
     <main>
@@ -20,9 +18,9 @@
         <section id="content"></section>
     </main>
     <script>
+        const sd = new showdown.Converter({metadata: true});
         fetch('content.md').then(res => res.text())
-            .then(md => yamlFront.loadFront(md))
-            .then(fm => ({meta: fm, html: marked(fm.__content)}))
+            .then(md => ({html: sd.makeHtml(md), meta: sd.getMetadata()}))
             .then(page => {
                 const gravatarUrl = `https://gravatar.com/avatar/${page.meta.gravatar}?s=150`;
                 document.querySelector('#header img').setAttribute('src', gravatarUrl);
