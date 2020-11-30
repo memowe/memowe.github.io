@@ -1,8 +1,0 @@
-% my $url = $self->req->url;
-% layout 'contenticious', title => 'File not found!';
-
-%= t h1 => 'File not found!'
-%= t p => begin
-    I'm sorry, but I couldn't find what you were looking for:
-    %= t strong => $url
-% end

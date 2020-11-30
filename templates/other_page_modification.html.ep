@@ -1,2 +1,0 @@
-%= t div => (class => 'jumbopure jumbotron') => begin
-% end

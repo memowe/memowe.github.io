@@ -1,8 +1,0 @@
-{
-    pages_dir   => app->home->rel_file('pages'),
-    dump_dir    => app->home->rel_file('dump'),
-    name        => 'Mirko Westermeier',
-    copyright   => 'Mirko Westermeier',
-    cached      => 0,
-    perldoc     => 0,
-}
