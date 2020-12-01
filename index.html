@@ -9,7 +9,7 @@
 <body>
 
     <main>
-        <div id="main"></div>
+        <div id="mirko"></div>
         <div id="sections"></div>
     </main>
 
@@ -31,7 +31,7 @@
 
         // Load content
         const sections      = ['dh', 'dance', 'software']
-        const loadMain      = loadMarkdown('main')
+        const loadMirko     = loadMarkdown('mirko')
         const loadSections  = Promise.all(sections.map(loadMarkdown))
         const loadFooter    = loadMarkdown('footer')
 
@@ -39,10 +39,10 @@
             document.querySelector(selector).innerHTML = html
 
         // Mount content
-        Promise.all([loadMain, loadSections, loadFooter]).then(results => {
-            const [main, sections, footer] = results
+        Promise.all([loadMirko, loadSections, loadFooter]).then(results => {
+            const [mirko, sections, footer] = results
 
-            mount('#main', main.html)
+            mount('#mirko', mirko.html)
             mount('#sections', sections.map(s => `<section id="${s.section}">${s.html}</section>`).join(''))
             mount('footer', footer.html)
         })
