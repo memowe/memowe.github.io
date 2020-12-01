@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Mirko Westermeier</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
+</head>
+<body>
+    <script defer>
+
+        // Prepare markdown translator
+        const sd = new showdown.Converter({metadata: true})
+
+        // Prepare markdown data loader
+        const loadMarkdown = section => fetch(`content/${section}.md`)
+            .then(res => res.text())
+            .then(markdown => ({
+                section:    section,
+                html:       sd.makeHtml(markdown),
+                meta:       sd.getMetadata(),
+            }))
+
+        // Load content
+        const sections      = ['dh', 'dance', 'software']
+        const loadMain      = loadMarkdown('main')
+        const loadSections  = Promise.all(sections.map(loadMarkdown))
+        const loadFooter    = loadMarkdown('footer')
+
+        // Mount content
+        Promise.all([loadMain, loadSections, loadFooter]).then(results => {
+
+            // Preparations
+            const [mainData, sectionData, footerData] = results
+            const body = document.querySelector('body')
+
+            // Header/main content
+            const main = document.createElement('header')
+            main.innerHTML = mainData.html
+            body.append(main)
+
+            // Content sections
+            const sections = document.createElement('main')
+            sectionData.forEach(data => {
+                const section       = document.createElement('section')
+                section.id          = data.section
+                section.innerHTML   = data.html
+                sections.append(section)
+            })
+            body.append(sections)
+
+            // Footer content
+            const footer = document.createElement('footer')
+            footer.innerHTML = footerData.html
+            body.append(footer)
+        })
+
+    </script>
+</body>
+</html>
