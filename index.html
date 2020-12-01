@@ -7,6 +7,14 @@
     <script src="https://cdn.jsdelivr.net/npm/showdown"></script>
 </head>
 <body>
+
+    <main>
+        <div id="main"></div>
+        <div id="sections"></div>
+    </main>
+
+    <footer></footer>
+
     <script defer>
 
         // Prepare markdown translator
@@ -27,32 +35,16 @@
         const loadSections  = Promise.all(sections.map(loadMarkdown))
         const loadFooter    = loadMarkdown('footer')
 
+        const mount = (selector, html) =>
+            document.querySelector(selector).innerHTML = html
+
         // Mount content
         Promise.all([loadMain, loadSections, loadFooter]).then(results => {
+            const [main, sections, footer] = results
 
-            // Preparations
-            const [mainData, sectionData, footerData] = results
-            const body = document.querySelector('body')
-
-            // Header/main content
-            const main = document.createElement('header')
-            main.innerHTML = mainData.html
-            body.append(main)
-
-            // Content sections
-            const sections = document.createElement('main')
-            sectionData.forEach(data => {
-                const section       = document.createElement('section')
-                section.id          = data.section
-                section.innerHTML   = data.html
-                sections.append(section)
-            })
-            body.append(sections)
-
-            // Footer content
-            const footer = document.createElement('footer')
-            footer.innerHTML = footerData.html
-            body.append(footer)
+            mount('#main', main.html)
+            mount('#sections', sections.map(s => `<section id="${s.section}">${s.html}</section>`).join(''))
+            mount('footer', footer.html)
         })
 
     </script>
