@@ -1,0 +1,17 @@
+/* General Layout */
+
+#noscript {
+    margin: 1em;
+}
+
+/* Typography */
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
