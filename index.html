@@ -8,6 +8,12 @@
 </head>
 <body>
 
+    <div id="noscript">
+        <h1>Mirko Westermeier</h1>
+        <p>Überwasserstraße 31-33<br>48143 Münster</p>
+        <p>E-Mail: <a href="mailto:mirko@westermeier.de">mirko@westermeier.de</a></p>
+    </div>
+
     <main>
         <div id="mirko"></div>
         <div id="sections"></div>
@@ -42,6 +48,7 @@
         Promise.all([loadMirko, loadSections, loadFooter]).then(results => {
             const [mirko, sections, footer] = results
 
+            document.querySelector('#noscript').remove()
             mount('#mirko', mirko.html)
             mount('#sections', sections.map(s => `<section id="${s.section}">${s.html}</section>`).join(''))
             mount('footer', footer.html)
