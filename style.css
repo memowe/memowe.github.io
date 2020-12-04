@@ -48,12 +48,9 @@ header #mirko {
 
 /* Section content fluid "cards" */
 
-body {
-    background: black;
-}
-
 main {
-    margin: 0 .5em;
+    background: linear-gradient(to bottom, black 0%, #222 10%, #282828 100%);
+    padding: 1em .5em 2em;
 }
 
 #sections {
@@ -68,7 +65,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin: .5em;
-    background: lightgrey;
+    background: #eee;
+    box-shadow: 0 .1em .3em black;
 }
 
 #sections section:nth-child(even) {
