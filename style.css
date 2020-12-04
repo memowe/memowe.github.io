@@ -71,6 +71,10 @@ main {
     background: lightgrey;
 }
 
+#sections section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
 #sections section > * {
     flex: 1 1 20em;
 }
