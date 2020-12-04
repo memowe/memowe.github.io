@@ -24,6 +24,13 @@ footer {
     flex: 1 0 auto;
 }
 
+/* Make it bigger on wide screens */
+@media (min-width: 95em) {
+    header, main, footer {
+        font-size: 1.3em
+    }
+}
+
 /* Page header */
 
 header {
