@@ -1,7 +1,27 @@
-/* General Layout */
+/* Fall back content */
 
 #noscript {
     margin: 1em;
+}
+
+/* General Layout */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 content;
+}
+
+main {
+    flex: 0 0 content;
+}
+
+footer {
+    flex: 1 0 auto;
 }
 
 /* Page header */
