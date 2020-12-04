@@ -74,6 +74,11 @@ main {
     flex-direction: row-reverse;
 }
 
+#sections section:nth-child(odd) {
+    background-color: #555;
+    color: white;
+}
+
 #sections section > * {
     flex: 1 1 20em;
 }
