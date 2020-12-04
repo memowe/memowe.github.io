@@ -39,6 +39,47 @@ header #mirko {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+/* Section content fluid "cards" */
+
+body {
+    background: black;
+}
+
+main {
+    margin: 0 .5em;
+}
+
+#sections {
+    max-width: 120em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sections section {
+    flex: 1 1 calc(960px * 999 - 100% * 999);
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em;
+    background: lightgrey;
+}
+
+#sections section > * {
+    flex: 1 1 24em;
+}
+
+#sections section .section-head {
+    background: red; /* TODO */
+}
+
+.section-head img {
+    max-width: 100%;
+}
+
+.section-content {
+    padding: .5em 2em;
+}
+
 /* Typography */
 
 * {
