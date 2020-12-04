@@ -50,14 +50,14 @@ main {
 }
 
 #sections {
-    max-width: 120em;
+    max-width: 100em;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 #sections section {
-    flex: 1 1 calc(960px * 999 - 100% * 999);
+    flex: 1 1 calc(65em * 999 - 100% * 999);
     display: flex;
     flex-wrap: wrap;
     margin: .5em;
@@ -65,7 +65,7 @@ main {
 }
 
 #sections section > * {
-    flex: 1 1 24em;
+    flex: 1 1 20em;
 }
 
 #sections section .section-head {
