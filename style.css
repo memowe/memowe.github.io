@@ -42,7 +42,7 @@ header #mirko {
     width: 35em;
     max-width: 100%;
     margin: 0 auto;
-    padding: .5em 2em;
+    padding: .1em 1.5em 1em;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -50,8 +50,9 @@ header #mirko {
 
 main {
     background: linear-gradient(to bottom, black 0%, #222 10%, #282828 100%);
-    padding: 1em .5em 2em;
+    padding: 1em 2em 2em;
 }
+@media (max-width: 30em) { main {padding: 1em .5em 2em} }
 
 #sections {
     max-width: 100em;
@@ -86,7 +87,7 @@ main {
 }
 
 .section-content {
-    padding: .5em 2em;
+    padding: .1em 1.5em 1em;
 }
 
 /* Typography */
