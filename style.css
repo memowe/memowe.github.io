@@ -49,10 +49,10 @@ header #mirko {
 /* Section content fluid "cards" */
 
 main {
-    background: linear-gradient(to bottom, black 0%, #222 10%, #282828 100%);
-    padding: 1em 2em 2em;
+    background: linear-gradient(to bottom, black 0%, #111 10%, #222 100%);
+    padding: 1.5em 2em 2.5em;
 }
-@media (max-width: 30em) { main {padding: 1em .5em 2em} }
+@media (max-width: 30em) { main {padding: 1.5em .5em 2.5em} }
 
 #sections {
     max-width: 100em;
@@ -65,17 +65,19 @@ main {
     flex: 1 1 calc(65em * 999 - 100% * 999);
     display: flex;
     flex-wrap: wrap;
-    margin: .5em;
+    margin: 1em;
     background: #eee;
     box-shadow: 0 .1em .3em black;
 }
+@media (min-width: 80em) { #sections section {margin: 1.5em} }
+@media (max-width: 20em) { #sections section {margin: .5em} }
 
 #sections section:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 #sections section:nth-child(odd) {
-    background-color: #555;
+    background-color: #444;
     color: white;
 }
 
