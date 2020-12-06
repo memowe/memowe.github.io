@@ -142,6 +142,7 @@ footer a {color: #ccc}
 
 #footer-icons {
     flex: 1 1 content;
+    text-align: right
 }
 
 #footer-icons a {
