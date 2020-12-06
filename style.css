@@ -1,0 +1,118 @@
+/* Fall back content */
+
+#noscript {
+    margin: 1em;
+}
+
+/* General Layout */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 0 0 content;
+}
+
+main {
+    flex: 0 0 content;
+}
+
+footer {
+    flex: 1 0 auto;
+}
+
+/* Make it bigger on wide screens */
+@media (min-width: 95em) {
+    header, main, footer {
+        font-size: 1.3em
+    }
+}
+
+/* Page header */
+
+header {
+    background: url('images/sunrise_ms.png') bottom/cover;
+    padding: 3em 3em 2em;
+}
+@media (max-width: 30em) { header {padding: 1em} }
+
+header #mirko {
+    width: 42em;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .1em 1.5em 1em;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Section content fluid "cards" */
+
+main {
+    background: linear-gradient(to bottom, black 0%, #111 10%, #222 100%);
+    padding: 1.5em 2em 2.5em;
+}
+@media (max-width: 30em) { main {padding: 1.5em .5em 2.5em} }
+
+#sections {
+    max-width: 100em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sections section {
+    flex: 1 1 calc(65em * 999 - 100% * 999);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    background: #eee;
+    box-shadow: 0 .1em .3em black;
+}
+@media (min-width: 80em) { #sections section {margin: 1.5em} }
+@media (max-width: 30em) { #sections section {margin: .5em} }
+
+#sections section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#sections section:nth-child(odd) {
+    background-color: #444;
+    color: white;
+}
+
+#sections section > * {
+    flex: 1 1 18em;
+}
+
+.section-head img {
+    max-width: 100%;
+}
+
+.section-content {
+    padding: .1em 1.5em 1em;
+}
+
+/* Footer */
+
+footer {
+    box-shadow: inset 0 .1em .3em black;
+    background: #333;
+    background: linear-gradient(to bottom,#262626 0%, #383838 100%);
+    padding: 2.5em 2em 4em;
+    text-align: center;
+    color: #666;
+}
+
+/* Typography */
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
