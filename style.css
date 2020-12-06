@@ -58,6 +58,11 @@ header #mirko {
     #mirko > p:first-child img {float: none; margin: 0}
 }
 
+#mirko .icons img {
+    width: 2.5em;
+    margin: .1em;
+}
+
 /* Section content fluid "cards" */
 
 main {
