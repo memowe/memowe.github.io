@@ -35,11 +35,12 @@ footer {
 
 header {
     background: url('images/sunrise_ms.png') bottom/cover;
-    padding: 1em;
+    padding: 3em 3em 2em;
 }
+@media (max-width: 30em) { header {padding: 1em} }
 
 header #mirko {
-    width: 35em;
+    width: 42em;
     max-width: 100%;
     margin: 0 auto;
     padding: .1em 1.5em 1em;
@@ -70,7 +71,7 @@ main {
     box-shadow: 0 .1em .3em black;
 }
 @media (min-width: 80em) { #sections section {margin: 1.5em} }
-@media (max-width: 20em) { #sections section {margin: .5em} }
+@media (max-width: 30em) { #sections section {margin: .5em} }
 
 #sections section:nth-child(even) {
     flex-direction: row-reverse;
