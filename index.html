@@ -29,7 +29,10 @@
     </main>
 
     <footer>
-        <div id="footer"></div>
+        <div id="footer">
+            <div id="footer-copyright"></div>
+            <div id="footer-icons"></div>
+        </div>
     </footer>
 
     <script defer>
@@ -50,10 +53,11 @@
             }))
 
         // Load content
-        const sections      = ['dh', 'dance', 'software']
-        const loadMirko     = loadMarkdown('mirko')
-        const loadSections  = Promise.all(sections.map(loadMarkdown))
-        const loadFooter    = loadMarkdown('footer')
+        const sections              = ['dh', 'dance', 'software']
+        const loadMirko             = loadMarkdown('mirko')
+        const loadSections          = Promise.all(sections.map(loadMarkdown))
+        const loadFooterCopyright   = loadMarkdown('footer-copyright')
+        const loadFooterIcons       = loadMarkdown('footer-icons')
 
         const mount = (selector, html) =>
             document.querySelector(selector).innerHTML = html
@@ -67,13 +71,15 @@
         `
 
         // Mount content
-        Promise.all([loadMirko, loadSections, loadFooter]).then(results => {
-            const [mirko, sections, footer] = results
+        const promises = [loadMirko, loadSections, loadFooterCopyright, loadFooterIcons]
+        Promise.all(promises).then(results => {
+            const [mirko, sections, footerC, footerI] = results
 
             document.querySelector('#noscript').remove()
             mount('#mirko', mirko.html)
             mount('#sections', sections.map(s => wrap(s.section, s.html)).join(''))
-            mount('#footer', footer.html)
+            mount('#footer-copyright', footerC.html)
+            mount('#footer-icons', footerI.html)
         })
 
     </script>
