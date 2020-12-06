@@ -74,7 +74,7 @@ main {
     background: linear-gradient(to bottom, black 0%, #111 10%, #222 100%);
     padding: 1.5em 2em 2.5em;
 }
-@media (max-width: 30em) { main {padding: 1.5em .5em 2.5em} }
+@media (max-width: 30em) { main {padding: .5em .5em 2.5em} }
 
 #sections {
     max-width: 100em;
