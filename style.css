@@ -47,6 +47,17 @@ header #mirko {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#mirko > p:first-child img {
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 9rem;
+}
+@media (max-width: 42em) { #mirko > p:first-child img {width: 6rem} }
+@media (max-width: 30em) {
+    #mirko > p:first-child {text-align: center}
+    #mirko > p:first-child img {float: none; margin: 0}
+}
+
 /* Section content fluid "cards" */
 
 main {
