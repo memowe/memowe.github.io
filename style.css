@@ -58,10 +58,15 @@ header #mirko {
     #mirko > p:first-child img {float: none; margin: 0}
 }
 
-#mirko .icons img {
-    width: 2.5em;
-    margin: .1em;
-}
+/* FontAwesome */
+#mirko a {text-decoration: none; color: black}
+#mirko a i {font-size: 2.5em; margin: .1em; color: #666; opacity: .7}
+#mirko a:link, #mirko a:visited {opacity: .7}
+#mirko a:hover, #mirko a:active {opacity: 1}
+#mirko a i[class*=envelope] {color: maroon}
+#mirko a i[class*=github] {color: black}
+#mirko a i[class*=twitter] {color: #1da1f2}
+#mirko a i[class*=facebook] {color: #3b5998}
 
 /* Section content fluid "cards" */
 
