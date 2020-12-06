@@ -82,11 +82,7 @@ main {
 }
 
 #sections section > * {
-    flex: 1 1 20em;
-}
-
-#sections section .section-head {
-    background: red; /* TODO */
+    flex: 1 1 18em;
 }
 
 .section-head img {
