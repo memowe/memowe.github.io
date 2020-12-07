@@ -5,10 +5,11 @@
 **Research software developer, dance instructor and 3D RC helicopter pilot with a passion for teaching.**  
 Located in Münster, Germany.
 
-[ @fa-envelope-square ][mail]
-[ @fa-github-square ][github]
-[ @fa-twitter-square ][twitter]
-[ @fa-facebook-square ][facebook]
+[<i class="fas fa-envelope-square"></i>][mail]
+[<i class="fab fa-github-square"></i>][github]
+[<i class="fab fa-twitter-square"></i>][twitter]
+[<i class="fab fa-facebook-square"></i>][facebook]
+[<i class="fab fa-instagram-square"></i>][instagram]
 
 Public OpenPGP key: [`0x730E195D`][key]
 
@@ -17,4 +18,5 @@ Public OpenPGP key: [`0x730E195D`][key]
 [github]: https://github.com/memowe
 [twitter]: https://twitter.com/memowe
 [facebook]: https://facebook.com/mirko.westermeier
+[instagram]: https://instagram.com/mirkeau
 [key]: 730E195D.asc
