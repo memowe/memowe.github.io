@@ -89,10 +89,16 @@ main {
     flex-wrap: wrap;
     margin: 1em;
     background: #eee;
+    color: #222;
     box-shadow: 0 .1em .3em black;
 }
 @media (min-width: 80em) { #sections section {margin: 1.5em} }
 @media (max-width: 30em) { #sections section {margin: .5em} }
+
+#sections section a {
+    color: black;
+    text-decoration: none;
+}
 
 #sections section:nth-child(even) {
     flex-direction: row-reverse;
@@ -100,6 +106,10 @@ main {
 
 #sections section:nth-child(odd) {
     background-color: #444;
+    color: #ddd;
+}
+
+#sections section:nth-child(odd) a {
     color: white;
 }
 
