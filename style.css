@@ -125,6 +125,12 @@ main {
     padding: .1em 1.5em 1em;
 }
 
+.section-content a i[class*=fa] {
+    font-size: 1.6em;
+    vertical-align: bottom;
+    margin: 0 .2em;
+}
+
 /* Footer */
 
 footer {
