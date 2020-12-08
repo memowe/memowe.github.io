@@ -1,0 +1,9 @@
+pages:
+    stage: deploy
+    script:
+        - mkdir /tmp/public
+        - cp -r ./* /tmp/public/
+        - mv /tmp/public ./
+    artifacts:
+        paths:
+            - public
