@@ -11,7 +11,7 @@ Located in Münster, Germany.
 [<i class="fab fa-facebook-square"></i>][facebook]
 [<i class="fab fa-instagram-square"></i>][instagram]
 
-Public OpenPGP key: [`0x730E195D`][key]
+Public OpenPGP key: [`BF62F357`][key]
 
 [gravatar]: https://gravatar.com/avatar/2321454fdd1cd19ff478bec4ca5b163f?s=200
 [mail]: mailto:mirko@westermeier.de
@@ -19,4 +19,4 @@ Public OpenPGP key: [`0x730E195D`][key]
 [twitter]: https://twitter.com/memowe
 [facebook]: https://facebook.com/mirko.westermeier
 [instagram]: https://instagram.com/mirkeau
-[key]: 730E195D.asc
+[key]: BF62F357.asc
