@@ -1,2 +1,7 @@
 # Vim swap files
 *.sw?
+
+# Generated content
+/output/**
+!/output/**/
+!/output/**/.gitkeep

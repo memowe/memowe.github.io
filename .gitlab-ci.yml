@@ -1,9 +1,15 @@
 pages:
     stage: deploy
+    only:
+        - main
+    image:
+        name: pandoc/core:2.14
+        entrypoint: ["/bin/sh", "-c"]
+    before_script:
+        - apk add git make m4
     script:
-        - mkdir /tmp/public
-        - cp -r ./* /tmp/public/
-        - mv /tmp/public ./
+        - make
+        - mv output/public ./
     artifacts:
         paths:
             - public

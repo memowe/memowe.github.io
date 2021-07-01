@@ -1,8 +1,8 @@
-[<i class="fas fa-envelope"></i>][mail]
-[<i class="fab fa-github"></i>][github]
-[<i class="fab fa-twitter"></i>][twitter]
-[<i class="fab fa-facebook"></i>][facebook]
-[<i class="fab fa-instagram"></i>][instagram]
+[![Mail](images/icons/mail.svg "Mail")][mail]
+[![GitHub](images/icons/github.svg "GitHub")][github]
+[![Twitter](images/icons/twitter.svg "Twitter")][twitter]
+[![Facebook](images/icons/facebook.svg "Facebook")][facebook]
+[![Instagram](images/icons/instagram.svg "Instagram")][instagram]
 
 [mail]: mailto:mirko@westermeier.de
 [github]: https://github.com/memowe
