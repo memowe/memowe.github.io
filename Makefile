@@ -8,6 +8,7 @@ website: clean mirko sections footer static
 
 mirko:
 	pandoc \
+		--from=markdown-auto_identifiers \
 		--to=html \
 		--template=templates/mirko.html \
 		--metadata title=mirko \
@@ -17,6 +18,7 @@ mirko:
 sections:
 	for section in dh dance software ; do \
 		pandoc \
+			--from=markdown-auto_identifiers \
 			--to=html \
 			--template=templates/section.html \
 			--metadata title=$$section \
@@ -28,6 +30,7 @@ sections:
 footer:
 	for part in copyright legal icons ; do \
 		pandoc \
+			--from=markdown-auto_identifiers \
 			--to=html \
 			--template=templates/footer-$${part}.html \
 			--metadata title=footer-$$part \
