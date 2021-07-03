@@ -19,6 +19,9 @@ jobs:
       - name: Convert via pandoc
         run: make
 
+      - name: Copy custom domain name configuration
+        run: cp CNAME output/public/
+
       - name: Cleanup
         run: find output -name .gitkeep -delete
 
