@@ -1,4 +1,4 @@
-![](images/mirko.png)
+![-](images/mirko.png)
 
 # Mirko Westermeier
 
