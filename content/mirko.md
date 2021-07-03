@@ -1,19 +1,22 @@
-![][gravatar]
+![](images/mirko.png)
 
 # Mirko Westermeier
 
 **Research software developer, dance instructor and 3D RC helicopter pilot with a passion for teaching.**  
 Located in Münster, Germany.
 
-[<i class="fas fa-envelope-square"></i>][mail]
-[<i class="fab fa-github-square"></i>][github]
-[<i class="fab fa-twitter-square"></i>][twitter]
-[<i class="fab fa-facebook-square"></i>][facebook]
-[<i class="fab fa-instagram-square"></i>][instagram]
+::: icons
 
-Public OpenPGP key: [`BF62F357`][key]
+[![Mail](images/icons/mail.svg "Mail")][mail]
+[![GitHub](images/icons/github.svg "GitHub")][github]
+[![Twitter](images/icons/twitter.svg "Twitter")][twitter]
+[![Facebook](images/icons/facebook.svg "Facebook")][facebook]
+[![Instagram](images/icons/instagram.svg "Instagram")][instagram]
 
-[gravatar]: https://gravatar.com/avatar/2321454fdd1cd19ff478bec4ca5b163f?s=200
+:::
+
+Public OpenPGP key: [BF62F357][key]
+
 [mail]: mailto:mirko@westermeier.de
 [github]: https://github.com/memowe
 [twitter]: https://twitter.com/memowe

@@ -1,0 +1,49 @@
+name: Build website
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    container:
+      image: docker://pandoc/core:2.14
+      options: --entrypoint=sh
+    steps:
+
+      - name: Install dependencies
+        run: apk add git make m4
+
+      - name: Checkout repository content
+        uses: actions/checkout@v2
+
+      - name: Convert via pandoc
+        run: make
+
+      - name: Cleanup
+        run: find output -name .gitkeep -delete
+
+      - name: Store generated content
+        uses: actions/upload-artifact@v2
+        with:
+          path: output/public
+          name: website
+
+  deploy:
+    needs: build
+    if: success() && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-20.04
+    steps:
+
+      - name: Load generated content
+        uses: actions/download-artifact@v2
+        with:
+          name: website
+          path: public
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
