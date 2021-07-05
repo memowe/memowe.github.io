@@ -1,10 +1,21 @@
-.PHONY: website mirko sections footer static clean
+.PHONY: all prepare website mirko sections footer static clean
 
-website: clean mirko sections footer static
+all: prepare website
+
+prepare: clean
+	mkdir -p \
+		output/sections \
+		output/footer \
+		output/public
+
+website: static mirko sections footer
 	m4	\
 		--include=output \
 		templates/website.html \
 		> output/public/index.html
+
+static:
+	cp -r static/* output/public/
 
 mirko:
 	pandoc \
@@ -38,12 +49,5 @@ footer:
 			content/footer-$$part.md ; \
 	done
 
-static:
-	cp -r static/* output/public/
-
 clean:
-	rm -rf \
-		output/mirko \
-		output/sections/* \
-		output/footer/* \
-		output/public/* \
+	find output -not -name output -and -not -name .gitkeep -delete

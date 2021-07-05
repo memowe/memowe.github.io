@@ -3,5 +3,4 @@
 
 # Generated content
 /output/**
-!/output/**/
-!/output/**/.gitkeep
+!/output/.gitkeep

@@ -16,14 +16,11 @@ jobs:
       - name: Checkout repository content
         uses: actions/checkout@v2
 
-      - name: Convert via pandoc
+      - name: Build
         run: make
 
       - name: Copy custom domain name configuration
         run: cp CNAME output/public/
-
-      - name: Cleanup
-        run: find output -name .gitkeep -delete
 
       - name: Store generated content
         uses: actions/upload-artifact@v2
