@@ -39,10 +39,7 @@ footer:
 	done
 
 static:
-	for dir in fonts images style ; do \
-		cp -r $$dir output/public/ ; \
-	done
-	cp *.asc output/public/
+	cp -r static/* output/public/
 
 clean:
 	rm -rf \
