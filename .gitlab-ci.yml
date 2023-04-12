@@ -3,7 +3,7 @@ pages:
     only:
         - main
     image:
-        name: pandoc/core:2.14
+        name: pandoc/core:3.1
         entrypoint: ["/bin/sh", "-c"]
     before_script:
         - apk add git make m4
