@@ -28,22 +28,24 @@ jobs:
           path: output/public
           name: website
 
+      - name: Prepare tarball for native GH pages
+        run: tar cvf artifact.tar -C output/public .
+
+      - name: Store generated content as tarball for GH pages
+        # actions/upload-pages-artifact is broken with tar --hard-dereference
+        uses: actions/upload-artifact@v3
+        with:
+          path: artifact.tar
+          name: github-pages
+
   deploy:
     needs: build
     if: success() && github.ref == 'refs/heads/main'
     runs-on: ubuntu-20.04
+    permissions:
+      pages: write
+      id-token: write
     steps:
-
-      - name: Load generated content
-        uses: actions/download-artifact@v3
-        with:
-          name: website
-          path: public
-
       - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: deployment
+        uses: actions/deploy-pages@v2
