@@ -6,12 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     container:
-      image: docker://pandoc/core:2.14
+      image: docker://pandoc/core:2.14-ubuntu
       options: --entrypoint=sh
     steps:
 
       - name: Install dependencies
-        run: apk add git make m4
+        run: apt update && apt install -y git make m4
 
       - name: Checkout repository content
         uses: actions/checkout@v3
@@ -28,24 +28,22 @@ jobs:
           path: output/public
           name: website
 
-      - name: Prepare tarball for native GH pages
-        run: tar cvf artifact.tar -C output/public .
-
-      - name: Store generated content as tarball for GH pages
-        # actions/upload-pages-artifact is broken with tar --hard-dereference
-        uses: actions/upload-artifact@v3
+      - name: Store generated content for GH pages
+        uses: actions/upload-pages-artifact@v2
         with:
-          path: artifact.tar
-          name: github-pages
+          path: output/public
 
   deploy:
     needs: build
     if: success() && github.ref == 'refs/heads/main'
     runs-on: ubuntu-20.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     permissions:
       pages: write
       id-token: write
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy
         uses: actions/deploy-pages@v2
