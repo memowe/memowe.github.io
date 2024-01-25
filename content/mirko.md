@@ -9,7 +9,6 @@ Located in Münster, Germany.
 
 [![Mail](images/icons/mail.svg "Mail")][mail]
 [![GitHub](images/icons/github.svg "GitHub")][github]
-[![Twitter](images/icons/twitter.svg "Twitter")][twitter]
 [![YouTube](images/icons/youtube.svg "YouTube")][youtube]
 [![Instagram](images/icons/instagram.svg "Instagram")][instagram]
 [![Facebook](images/icons/facebook.svg "Facebook")][facebook]
