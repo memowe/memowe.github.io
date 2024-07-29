@@ -5,4 +5,4 @@ I work as a research software developer at the **Service Center for Digital Huma
 [![-](images/icons/globe.svg) **SCDH website**][scdh]
 
 [uni-ms]: https://www.uni-muenster.de
-[scdh]: https://www.uni-muenster.de/SCDH
+[scdh]: https://www.uni-muenster.de/DH/scdh/index.html
