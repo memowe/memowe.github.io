@@ -4,9 +4,9 @@ on: [push, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     container:
-      image: docker://pandoc/core:3.1-ubuntu
+      image: docker://pandoc/core:3.6-ubuntu
       options: --entrypoint=sh
     steps:
 
@@ -23,20 +23,20 @@ jobs:
         run: cp CNAME output/public/
 
       - name: Store generated content
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: output/public
           name: website
 
       - name: Store generated content for GH pages
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: output/public
 
   deploy:
     needs: build
     if: success() && github.ref == 'refs/heads/main'
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -46,4 +46,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deploy
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
