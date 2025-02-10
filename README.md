@@ -25,7 +25,7 @@ Personal static responsive single page website without external resources, track
 
 ## Copyright and license
 
-&copy; 2010-2024 Mirko Westermeier
+&copy; 2010-2025 Mirko Westermeier
 
 All rights reserved. Alle Rechte vorbehalten.
 
