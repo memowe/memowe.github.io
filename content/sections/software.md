@@ -4,5 +4,5 @@ I develop tiny and medium tools and libraries just to try out new technologies, 
 
 [![-](images/icons/github.svg) **@memowe on GitHub**][github]
 
-[dong]: https://www.ksta.de/koeln/koeln-im-netz-der-mann-hinter-dem-twitter-dom-2360804
+[dong]: https://web.archive.org/web/20230202180305/https://www.ksta.de/koeln/koeln-im-netz-der-mann-hinter-dem-twitter-dom-310633
 [github]: https://github.com/memowe
