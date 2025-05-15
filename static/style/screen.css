@@ -71,7 +71,7 @@ header #mirko {
 }
 
 header img[src*=icons] {
-    height: 2.5em;
+    height: 2.2em;
     margin: .3em;
 }
 
@@ -209,7 +209,7 @@ footer hr {
 }
 
 #footer-icons img[src*=icons] {
-    height: 1.8em;
+    height: 1.7em;
     margin: .7em;
     filter: invert(1);
 }
