@@ -2,7 +2,7 @@
 
 # Mirko Westermeier
 
-**Research software developer, dance instructor and 3D RC helicopter pilot with a passion for teaching.**  
+**Research software developer, dance instructor and proud dad with a passion for teaching.**  
 Located in Münster, Germany.
 
 ::: icons
