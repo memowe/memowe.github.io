@@ -2,11 +2,9 @@
 
 **I do not collect any data on my website!** I do not use cookies, there is no newsletter, no tracking and no other integrated media. I don't even know you're here!
 
-Only my web host - *GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States of America* - temporarily collects the technical access data necessary for operation, certified in accordance with the [EU-US Privacy Shield][gh-eu-us]. See the [GitHub Privacy Statement][gh-privacy] and the [GitHub Global Privacy Practices][gh-practices].
+This website is hosted via *GitHub Pages*. When accessing the site, GitHub, Inc., USA, processes technically necessary access data (e.g. IP address). Data transfers are based on the European Commission’s *Standard Contractual Clauses (Art. 46 GDPR)*. Further information can be found in [GitHub’s Privacy Statement][gh-privacy].
 
-[gh-eu-us]: https://www.privacyshield.gov/participant?id=a2zt000000001K2AAI&status=Active
 [gh-privacy]: https://docs.github.com/en/github/site-policy/github-privacy-statement
-[gh-practices]: https://help.github.com/articles/global-privacy-practices/
 
 ## Thank you, creators!
 
